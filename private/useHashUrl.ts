@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-function useHashUrl() {
+function useHashUrl(): string {
   const [url, setUrl] = React.useState<string>('/');
 
   React.useEffect(() => {
