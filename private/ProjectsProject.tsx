@@ -13,7 +13,7 @@ function ProjectsProject({ description, i, id, labels, name, photoUrl }: Project
       {labels.length > 0 && (
         <div display="flex" spaceX="2">
           {labels.map(label => (
-            <div className="Label" cursor="pointer" key={label} pX="3" pY="1">
+            <div className="Label" fontSize="2" key={label} pX="3" pY="1">
               {label}
             </div>
           ))}
