@@ -35,7 +35,7 @@ function Client() {
               key={label}
               pX="3"
               pY="1"
-              target={/https/.test(url) ? '_blank' : '_self'}
+              target={/^https/.test(url) ? '_blank' : '_self'}
             >
               {label}
             </a>
