@@ -4,15 +4,13 @@
 
 import React from 'react';
 import Container from './Container';
-import { CalendarIcon } from './icons';
-import { LeftArrowIcon } from './icons';
-import { MapIcon } from './icons';
+import { CalendarIcon, LeftArrowIcon, MapIcon } from './icons';
 import projects from './projects';
 
-const PROJECT_PAGE_PATTERN = /\/project\/(.+)/;
+const ProjectPagePattern = /\/project\/(.+)/;
 
 function ProjectPage({ url }: { url: string }) {
-  const [, id] = PROJECT_PAGE_PATTERN.exec(url)!;
+  const [, id] = ProjectPagePattern.exec(url)!;
 
   const project = projects.find(project => project.id === id);
 
@@ -51,8 +49,8 @@ function ProjectPage({ url }: { url: string }) {
               </div>
               <div spaceY="2" textAlign="right">
                 <div alignItems="center" display="flex" justifyContent="flex-end" spaceX="2">
-                  <CalendarIcon />
                   <div fontWeight="500">When</div>
+                  <CalendarIcon />
                 </div>
                 <div>{project.when}</div>
               </div>
@@ -63,5 +61,7 @@ function ProjectPage({ url }: { url: string }) {
     );
   }
 }
+
+export { ProjectPagePattern };
 
 export default ProjectPage;

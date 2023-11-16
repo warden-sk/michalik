@@ -6,11 +6,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Container from './Container';
 import './index.css';
-import ProjectPage from './ProjectPage';
+import ProjectPage, { ProjectPagePattern } from './ProjectPage';
 import projects from './projects';
 import ProjectsProject from './ProjectsProject';
-
-const PROJECT_PAGE_PATTERN = /\/project\/(.+)/;
 
 const labels: [string, string][] = [
   ['Projects', '#projects'],
@@ -41,11 +39,11 @@ function Client() {
 
   return (
     <>
-      {PROJECT_PAGE_PATTERN.test(url) ? (
+      {ProjectPagePattern.test(url) ? (
         <ProjectPage url={url} />
       ) : (
         <>
-          <div className="About" pY="8">
+          <div pY="8">
             <Container spaceY="8">
               <div>
                 <div fontSize="8">Mário Michalík</div>
