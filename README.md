@@ -1,3 +1,3 @@
 # michalik
 
-https://warden-sk.github.io/michalik/public/index.html
+https://warden-sk.github.io/michalik
