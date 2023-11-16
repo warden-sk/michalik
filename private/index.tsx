@@ -20,7 +20,7 @@ function Client() {
       <div spaceY="8">
         <div>
           <div fontSize="8">Mário Michalík</div>
-          <div width={['100', { '###': '6/12' }]}>
+          <div width={['100', { '##': '6/12' }]}>
             I run a Prague-based creative studio that focuses on architectural design solutions. In addition to
             providing design services, I have the ability to handcraft unique stories using a variety of visual tools.
             Whether it's through still images, 360° panoramas, or animations, I bring your projects to life.
@@ -44,12 +44,7 @@ function Client() {
         <div fontSize="6" id="projects">
           Projects
         </div>
-        <div
-          className="Projects"
-          display="grid"
-          gap="4"
-          gridTemplateColumns={['1', { '#': '2', '##': '3', '###': '4' }]}
-        >
+        <div className="Projects" display="grid" gap="4" gridTemplateColumns={['1', { '#': '2', '##': '3' }]}>
           {projects.map((project, i) => (
             <ProjectsProject {...project} i={projects.length - 1 - i} key={project.id} />
           ))}
