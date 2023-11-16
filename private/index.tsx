@@ -5,8 +5,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import ProjectPage from './ProjectPage';
 import projects from './projects';
 import ProjectsProject from './ProjectsProject';
+
+const PROJECT_PAGE_PATTERN = /\/project\/(.+)/;
 
 const labels: [string, string][] = [
   ['Projects', '#projects'],
@@ -15,49 +18,73 @@ const labels: [string, string][] = [
 ];
 
 function Client() {
+  const [url, setUrl] = React.useState<string>('/');
+
+  React.useEffect(() => {
+    const onHashChange = () => {
+      const hash = window.location.hash;
+
+      if (/^#\//.test(hash)) {
+        setUrl(hash.replace('#', ''));
+      }
+    };
+
+    onHashChange();
+
+    window.addEventListener('hashchange', onHashChange);
+
+    return () => {
+      window.removeEventListener('hashchange', onHashChange);
+    };
+  }, []);
+
   return (
     <div className="container" mX="auto" pX="4" pY="8">
-      <div spaceY="8">
-        <div>
-          <div fontSize="8">Mário Michalík</div>
-          <div width={['100', { '##': '6/12' }]}>
-            I run a Prague-based creative studio that focuses on architectural design solutions. In addition to
-            providing design services, I have the ability to handcraft unique stories using a variety of visual tools.
-            Whether it's through still images, 360° panoramas, or animations, I bring your projects to life.
+      {PROJECT_PAGE_PATTERN.test(url) ? (
+        <ProjectPage url={url} />
+      ) : (
+        <div spaceY="8">
+          <div>
+            <div fontSize="8">Mário Michalík</div>
+            <div width={['100', { '##': '6/12' }]}>
+              I run a Prague-based creative studio that focuses on architectural design solutions. In addition to
+              providing design services, I have the ability to handcraft unique stories using a variety of visual tools.
+              Whether it's through still images, 360° panoramas, or animations, I bring your projects to life.
+            </div>
+          </div>
+          <div display="flex" spaceX="2">
+            {labels.map(([label, url]) => (
+              <a
+                className="Label"
+                cursor="pointer"
+                href={url}
+                key={label}
+                pX="3"
+                pY="1"
+                target={/^https/.test(url) ? '_blank' : '_self'}
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+          <div fontSize="6" id="projects">
+            Projects
+          </div>
+          <div className="Projects" display="grid" gap="4" gridTemplateColumns={['1', { '#': '2', '##': '3' }]}>
+            {projects.map((project, i) => (
+              <ProjectsProject {...project} i={projects.length - 1 - i} key={project.id} />
+            ))}
+          </div>
+          <div fontSize="6" id="contact">
+            Contact
+          </div>
+          <div>
+            <div fontWeight="500">Ing. arch. Mário Michalík</div>
+            <div>Jeseniova 846/27</div>
+            <div>130 00 Praha 3</div>
           </div>
         </div>
-        <div display="flex" spaceX="2">
-          {labels.map(([label, url]) => (
-            <a
-              className="Label"
-              cursor="pointer"
-              href={url}
-              key={label}
-              pX="3"
-              pY="1"
-              target={/^https/.test(url) ? '_blank' : '_self'}
-            >
-              {label}
-            </a>
-          ))}
-        </div>
-        <div fontSize="6" id="projects">
-          Projects
-        </div>
-        <div className="Projects" display="grid" gap="4" gridTemplateColumns={['1', { '#': '2', '##': '3' }]}>
-          {projects.map((project, i) => (
-            <ProjectsProject {...project} i={projects.length - 1 - i} key={project.id} />
-          ))}
-        </div>
-        <div fontSize="6" id="contact">
-          Contact
-        </div>
-        <div>
-          <div fontWeight="500">Ing. arch. Mário Michalík</div>
-          <div>Jeseniova 846/27</div>
-          <div>130 00 Praha 3</div>
-        </div>
-      </div>
+      )}
     </div>
   );
 }
