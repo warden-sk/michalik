@@ -5,6 +5,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Container from './Container';
+import { PhoneIcon } from './icons';
 import './index.css';
 import ProjectPage, { ProjectPagePattern } from './ProjectPage';
 import projects from './projects';
@@ -69,6 +70,10 @@ function Client() {
           <div>
             <div fontWeight="500">Ing. arch. Mário Michalík</div>
             <div>Jeseniova 846/27, 130 00 Praha 3</div>
+          </div>
+          <div alignItems="center" display="flex" spaceX="2">
+            <PhoneIcon />
+            <div>+421 917 806 935</div>
           </div>
         </Container>
       </div>

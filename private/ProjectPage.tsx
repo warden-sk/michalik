@@ -3,8 +3,9 @@
  */
 
 import React from 'react';
+import AboutButton from './AboutButton';
 import Container from './Container';
-import { CalendarIcon, LeftArrowIcon, MapIcon } from './icons';
+import { CalendarIcon, MapIcon } from './icons';
 import projects from './projects';
 
 const ProjectPagePattern = /\/project\/(.+)/;
@@ -17,9 +18,7 @@ function ProjectPage({ url }: { url: string }) {
   if (project) {
     return (
       <Container spaceY="8">
-        <a href="#/">
-          <LeftArrowIcon />
-        </a>
+        <AboutButton />
         <div>
           <div fontSize="8">{project.name}</div>
           <div spaceY="8" width={['100', { '###': '6/12' }]}>
@@ -42,8 +41,8 @@ function ProjectPage({ url }: { url: string }) {
               </div>
               <div spaceY="2" textAlign="center">
                 <div alignItems="center" display="flex" justifyContent="center" spaceX="2">
-                  <MapIcon />
                   <div fontWeight="500">Where</div>
+                  <MapIcon />
                 </div>
                 <div>{project.where}</div>
               </div>
@@ -60,6 +59,16 @@ function ProjectPage({ url }: { url: string }) {
       </Container>
     );
   }
+
+  return (
+    <Container spaceY="8">
+      <AboutButton />
+      <div>
+        <div fontSize="8">Error</div>
+        <div>The project does not exist.</div>
+      </div>
+    </Container>
+  );
 }
 
 export { ProjectPagePattern };

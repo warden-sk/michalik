@@ -9,7 +9,7 @@ function ProjectsProject({ description, i, id, labels, name, photoUrl }: Project
   return (
     <a className="ProjectsProject" href={`#/project/${id}`} spaceY="2">
       <div fontSize="6">{(i + 1).toString().padStart(3, '0')}</div>
-      <img className="ProjectsProjectPhoto" display="block" src={photoUrl} width="100" />
+      <img className="ProjectsProjectPhoto" display="block" src={photoUrl} />
       <div pX="2" spaceY="2">
         <div>
           <div fontWeight="500">{name}</div>

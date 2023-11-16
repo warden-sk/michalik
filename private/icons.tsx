@@ -22,8 +22,6 @@ function CalendarIcon($: EnhancedJSXElement<'svg'>) {
       <path d="m 16 3 v 4" />
       <path d="m 8 3 v 4" />
       <path d="m 4 11 h 16" />
-      <path d="m 11 15 h 1" />
-      <path d="m 12 15 v 3" />
     </svg>
   );
 }
@@ -70,4 +68,23 @@ function MapIcon($: EnhancedJSXElement<'svg'>) {
   );
 }
 
-export { CalendarIcon, LeftArrowIcon, MapIcon };
+function PhoneIcon($: EnhancedJSXElement<'svg'>) {
+  return (
+    <svg
+      {...$}
+      className="PhoneIcon icon"
+      display="block"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path d="m 0 0 h 24 v 24 h -24 z" fill="none" stroke="none" />
+      <path d="m 5 4 h 4 l 2 5 l -2.5 1.5 a 11 11 0 0 0 5 5 l 1.5 -2.5 l 5 2 v 4 a 2 2 0 0 1 -2 2 a 16 16 0 0 1 -15 -15 a 2 2 0 0 1 2 -2" />
+    </svg>
+  );
+}
+
+export { CalendarIcon, LeftArrowIcon, MapIcon, PhoneIcon };
