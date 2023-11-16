@@ -1,0 +1,17 @@
+/*
+ * Copyright 2023 Marek Kobida
+ */
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  font-family: futura-pt;
+}
+.Label {
+  background-color: hsl(0, 0%, 75%);
+  border-radius: 1rem;
+}
+.ProjectsProjectPhoto {
+  aspect-ratio: 4/3;
+  background-color: hsl(0, 0%, 25%);
+}
