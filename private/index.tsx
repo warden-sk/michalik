@@ -49,6 +49,14 @@ function Client() {
             <ProjectsProject {...project} i={projects.length - 1 - i} key={project.id} />
           ))}
         </div>
+        <div fontSize="6" id="contact">
+          Contact
+        </div>
+        <div>
+          <div fontWeight="500">Ing. arch. Mário Michalík</div>
+          <div>Jeseniova 846/27</div>
+          <div>130 00 Praha 3</div>
+        </div>
       </div>
     </div>
   );

@@ -5,9 +5,9 @@
 import React from 'react';
 import type { Project } from './types';
 
-function ProjectsProject({ description, i, labels, name, photoUrl }: Project & { i: number }) {
+function ProjectsProject({ description, i, id, labels, name, photoUrl }: Project & { i: number }) {
   return (
-    <div className="ProjectsProject" spaceY="2">
+    <a className="ProjectsProject" href={`#/project/${id}`} spaceY="2">
       <div fontSize="6">{(i + 1).toString().padStart(3, '0')}</div>
       <img className="ProjectsProjectPhoto" display="block" src={photoUrl} width="100" />
       {labels.length > 0 && (
@@ -20,10 +20,10 @@ function ProjectsProject({ description, i, labels, name, photoUrl }: Project & {
         </div>
       )}
       <div>
-        <div>{name}</div>
+        <div fontWeight="500">{name}</div>
         <div opacity="50">{description[0]}</div>
       </div>
-    </div>
+    </a>
   );
 }
 

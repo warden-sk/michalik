@@ -12,6 +12,10 @@ body {
   background-color: hsl(0, 0%, 75%);
   border-radius: 1rem;
 }
+.Projects {
+}
+.ProjectsProject {
+}
 .ProjectsProjectPhoto {
   aspect-ratio: 4/3;
   background-color: hsl(0, 0%, 25%);
