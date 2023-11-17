@@ -19,7 +19,7 @@ function ProjectPage({ id }: { id: string }) {
         <div>
           <div fontSize="8">{project.name}</div>
           <div spaceY="8" width={['100', { '###': '6/12' }]}>
-            <div textAlign="justify">{project.description[1]}</div>
+            <div>{project.description[1]}</div>
             {project.labels.length > 0 && (
               <div display="flex" spaceX="2">
                 {project.labels.map(label => (

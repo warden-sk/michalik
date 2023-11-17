@@ -6,10 +6,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Contact from './Contact';
 import Container from './Container';
+import useHashUrl from './helpers/useHashUrl';
 import './index.css';
 import ProjectPage from './ProjectPage';
 import Projects from './Projects';
-import useHashUrl from './useHashUrl';
 
 const ProjectPagePattern = /\/project\/(.+)/;
 
@@ -34,7 +34,7 @@ function Client() {
         <Container spaceY="8">
           <div>
             <div fontSize="8">Mário Michalík</div>
-            <div textAlign="justify" width={['100', { '###': '6/12' }]}>
+            <div width={['100', { '###': '6/12' }]}>
               I run a Prague-based creative studio that focuses on architectural design solutions. In addition to
               providing design services, I have the ability to handcraft unique stories using a variety of visual tools.
               Whether it's through still images, 360° panoramas, or animations, I bring your projects to life.
