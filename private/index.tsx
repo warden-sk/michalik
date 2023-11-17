@@ -4,9 +4,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Contact from './Contact';
 import Container from './Container';
-import MailIcon from './icons/MailIcon';
-import PhoneIcon from './icons/PhoneIcon';
 import './index.css';
 import ProjectPage, { ProjectPagePattern } from './ProjectPage';
 import Projects from './Projects';
@@ -27,7 +26,7 @@ function Client() {
 
   return (
     <>
-      <div pY="8">
+      <div className="About" pY="8">
         <Container spaceY="8">
           <div>
             <div fontSize="8">Mário Michalík</div>
@@ -57,23 +56,7 @@ function Client() {
       </div>
       <div className="Contact" pY="8">
         <Container spaceY="8">
-          <div fontSize="6" id="contact">
-            Contact
-          </div>
-          <div>
-            <div fontWeight="500">Ing. arch. Mário Michalík</div>
-            <div>Jeseniova 846/27, 130 00 Praha 3</div>
-          </div>
-          <div spaceY="2">
-            <div alignItems="center" display="flex" spaceX="2">
-              <MailIcon />
-              <div>mario@michalik.studio</div>
-            </div>
-            <div alignItems="center" display="flex" spaceX="2">
-              <PhoneIcon />
-              <div>+421 917 806 935</div>
-            </div>
-          </div>
+          <Contact />
         </Container>
       </div>
     </>
