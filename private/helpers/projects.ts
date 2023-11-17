@@ -15,7 +15,7 @@ const projects: Project[] = [
     name: 'Suspendisse Congue',
     photoUrl: '',
     when: 2023,
-    where: 'Prague',
+    where: 'Praha',
     who: 'Marek Kobida',
   },
   {
@@ -28,7 +28,7 @@ const projects: Project[] = [
     name: 'Aenean Eleifend',
     photoUrl: '',
     when: 2023,
-    where: 'Prague',
+    where: 'Praha',
     who: 'Marek Kobida',
   },
   {
@@ -41,7 +41,7 @@ const projects: Project[] = [
     name: 'Quisque Urna',
     photoUrl: '',
     when: 2023,
-    where: 'Prague',
+    where: 'Praha',
     who: 'Marek Kobida',
   },
 ];

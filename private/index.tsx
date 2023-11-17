@@ -30,7 +30,7 @@ function Client() {
 
   return (
     <>
-      <div className="About" pY="8">
+      <div pY="8">
         <Container spaceY="8">
           <div>
             <div fontSize="8">Mário Michalík</div>

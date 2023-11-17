@@ -3,11 +3,11 @@
  */
 
 import React from 'react';
-import AboutButton from './AboutButton';
 import Container from './Container';
 import projects from './helpers/projects';
 import CalendarIcon from './icons/CalendarIcon';
 import MapIcon from './icons/MapIcon';
+import ProjectsButton from './ProjectsButton';
 
 function ProjectPage({ id }: { id: string }) {
   const project = projects.find(project => project.id === id);
@@ -15,7 +15,7 @@ function ProjectPage({ id }: { id: string }) {
   if (project) {
     return (
       <Container spaceY="8">
-        <AboutButton />
+        <ProjectsButton />
         <div>
           <div fontSize="8">{project.name}</div>
           <div spaceY="8" width={['100', { '###': '6/12' }]}>
@@ -59,7 +59,7 @@ function ProjectPage({ id }: { id: string }) {
 
   return (
     <Container spaceY="8">
-      <AboutButton />
+      <ProjectsButton />
       <div>
         <div fontSize="8">Error</div>
         <div>The project does not exist.</div>
