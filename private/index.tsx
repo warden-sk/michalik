@@ -7,9 +7,11 @@ import ReactDOM from 'react-dom/client';
 import Contact from './Contact';
 import Container from './Container';
 import './index.css';
-import ProjectPage, { ProjectPagePattern } from './ProjectPage';
+import ProjectPage from './ProjectPage';
 import Projects from './Projects';
 import useHashUrl from './useHashUrl';
+
+const ProjectPagePattern = /\/project\/(.+)/;
 
 const labels: [string, string][] = [
   ['Projects', '#projects'],
@@ -21,7 +23,9 @@ function Client() {
   const url = useHashUrl();
 
   if (ProjectPagePattern.test(url)) {
-    return <ProjectPage url={url} />;
+    const [, id] = ProjectPagePattern.exec(url)!;
+
+    return <ProjectPage id={id!} />;
   }
 
   return (

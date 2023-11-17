@@ -9,11 +9,7 @@ import projects from './helpers/projects';
 import CalendarIcon from './icons/CalendarIcon';
 import MapIcon from './icons/MapIcon';
 
-const ProjectPagePattern = /\/project\/(.+)/;
-
-function ProjectPage({ url }: { url: string }) {
-  const [, id] = ProjectPagePattern.exec(url)!;
-
+function ProjectPage({ id }: { id: string }) {
   const project = projects.find(project => project.id === id);
 
   if (project) {
@@ -71,7 +67,5 @@ function ProjectPage({ url }: { url: string }) {
     </Container>
   );
 }
-
-export { ProjectPagePattern };
 
 export default ProjectPage;
