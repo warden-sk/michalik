@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import { LeftArrowIcon } from './icons';
+import LeftArrowIcon from './icons/LeftArrowIcon';
 
 function AboutButton() {
   return (

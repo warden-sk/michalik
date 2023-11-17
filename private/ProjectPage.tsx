@@ -5,8 +5,9 @@
 import React from 'react';
 import AboutButton from './AboutButton';
 import Container from './Container';
-import { CalendarIcon, MapIcon } from './icons';
-import projects from './projects';
+import projects from './helpers/projects';
+import CalendarIcon from './icons/CalendarIcon';
+import MapIcon from './icons/MapIcon';
 
 const ProjectPagePattern = /\/project\/(.+)/;
 

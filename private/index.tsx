@@ -5,11 +5,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Container from './Container';
-import { MailIcon, PhoneIcon } from './icons';
+import MailIcon from './icons/MailIcon';
+import PhoneIcon from './icons/PhoneIcon';
 import './index.css';
 import ProjectPage, { ProjectPagePattern } from './ProjectPage';
-import projects from './projects';
-import ProjectsProject from './ProjectsProject';
+import Projects from './Projects';
 import useHashUrl from './useHashUrl';
 
 const labels: [string, string][] = [
@@ -52,14 +52,7 @@ function Client() {
               </a>
             ))}
           </div>
-          <div fontSize="6" id="projects">
-            Projects
-          </div>
-          <div className="Projects" display="grid" gap="4" gridTemplateColumns={['1', { '#': '2', '##': '3' }]}>
-            {projects.map((project, i) => (
-              <ProjectsProject {...project} i={projects.length - 1 - i} key={project.id} />
-            ))}
-          </div>
+          <Projects />
         </Container>
       </div>
       <div className="Contact" pY="8">

@@ -3,10 +3,9 @@
  */
 
 import React from 'react';
-import type { Project } from './types';
+import type { Project } from './helpers/types';
 
 function ProjectsProject({ description, i, id, labels, name, photoUrl }: Project & { i: number }) {
-  // projects.length.toString().length
   return (
     <a className="ProjectsProject" href={`#/project/${id}`} spaceY="2">
       <div fontSize="6">{(i + 1).toString().padStart(3, '0')}</div>
