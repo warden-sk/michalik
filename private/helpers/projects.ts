@@ -13,7 +13,8 @@ const projects: Project[] = [
     id: 'suspendisse-congue',
     labels: ['Illustration'],
     name: 'Suspendisse Congue',
-    photoUrl: '',
+    photoUrl:
+      'https://unsplash.com/photos/wDDfbanbhl8/download?ixid=M3wxMjA3fDB8MXxhbGx8MjZ8fHx8fHwyfHwxNzAwMTkzMzg3fA',
     when: 2023,
     where: 'Praha',
     who: 'Marek Kobida',
@@ -26,7 +27,8 @@ const projects: Project[] = [
     id: 'aenean-eleifend',
     labels: ['Design', 'Illustration'],
     name: 'Aenean Eleifend',
-    photoUrl: '',
+    photoUrl:
+      'https://unsplash.com/photos/Cn87TISYij8/download?ixid=M3wxMjA3fDB8MXxhbGx8MjN8fHx8fHwyfHwxNzAwMTkzMTEwfA',
     when: 2023,
     where: 'Praha',
     who: 'Marek Kobida',
@@ -39,7 +41,22 @@ const projects: Project[] = [
     id: 'quisque-urna',
     labels: ['Illustration'],
     name: 'Quisque Urna',
-    photoUrl: '',
+    photoUrl:
+      'https://unsplash.com/photos/KQgrVfR3r74/download?ixid=M3wxMjA3fDB8MXxhbGx8NDF8fHx8fHwyfHwxNzAwMTkzMTE3fA',
+    when: 2023,
+    where: 'Praha',
+    who: 'Marek Kobida',
+  },
+  {
+    description: [
+      'Morbi a risus feugiat, ultrices lorem ut, rhoncus dui.',
+      'Morbi a risus feugiat, ultrices lorem ut, rhoncus dui. Quisque sed risus luctus, hendrerit sem at, feugiat magna. Proin vitae scelerisque sem. Duis pellentesque, erat et venenatis consequat, eros purus vulputate risus, id tincidunt orci eros non lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+    ],
+    id: 'phasellus-turpis',
+    labels: ['Illustration'],
+    name: 'Phasellus Turpis',
+    photoUrl:
+      'https://unsplash.com/photos/wJAOeXvxudM/download?ixid=M3wxMjA3fDB8MXxhbGx8NTR8fHx8fHwyfHwxNzAwMTkzNDI0fA',
     when: 2023,
     where: 'Praha',
     who: 'Marek Kobida',

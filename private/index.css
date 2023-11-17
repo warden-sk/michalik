@@ -22,6 +22,7 @@ body {
 .ProjectsProjectPhoto {
   aspect-ratio: 4/3;
   background-color: hsl(0, 0%, 25%);
+  object-fit: cover;
 }
 .icon {
   height: 24px;
