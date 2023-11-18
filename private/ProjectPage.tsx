@@ -8,6 +8,7 @@ import projects from './helpers/projects';
 import CalendarIcon from './icons/CalendarIcon';
 import MapIcon from './icons/MapIcon';
 import ProjectsButton from './ProjectsButton';
+import Text from './Text';
 
 function ProjectPage({ id }: { id: string }) {
   const project = projects.find(project => project.id === id);
@@ -17,38 +18,40 @@ function ProjectPage({ id }: { id: string }) {
       <Container spaceY="8">
         <ProjectsButton />
         <div>
-          <div fontSize="8">{project.name}</div>
-          <div spaceY="8" width={['100', { '###': '6/12' }]}>
-            <div>{project.description[1]}</div>
+          <Text fontWeight="500" size={8}>
+            {project.name}
+          </Text>
+          <div spaceY="8" width={['100', { '###': '9/12' }]}>
+            <Text size={4}>{project.description[1]}</Text>
             {project.labels.length > 0 && (
               <div display="flex" spaceX="2">
                 {project.labels.map(label => (
-                  <div className="Label" fontSize="2" key={label} pX="3" pY="1">
+                  <Text className="Label" key={label} pX="3" pY="1" size={2}>
                     {label}
-                  </div>
+                  </Text>
                 ))}
               </div>
             )}
             <div alignItems="center" display="flex" justifyContent="space-around">
               <div spaceY="2" textAlign="left">
                 <div alignItems="center" display="flex" justifyContent="flex-start" spaceX="2">
-                  <div fontWeight="500">Client</div>
+                  <Text fontWeight="500">Client</Text>
                 </div>
-                <div>{project.who}</div>
+                <Text>{project.who}</Text>
               </div>
               <div spaceY="2" textAlign="center">
                 <div alignItems="center" display="flex" justifyContent="center" spaceX="2">
-                  <div fontWeight="500">Where</div>
+                  <Text fontWeight="500">Where</Text>
                   <MapIcon />
                 </div>
-                <div>{project.where}</div>
+                <Text>{project.where}</Text>
               </div>
               <div spaceY="2" textAlign="right">
                 <div alignItems="center" display="flex" justifyContent="flex-end" spaceX="2">
-                  <div fontWeight="500">When</div>
+                  <Text fontWeight="500">When</Text>
                   <CalendarIcon />
                 </div>
-                <div>{project.when}</div>
+                <Text>{project.when}</Text>
               </div>
             </div>
           </div>
