@@ -32,9 +32,6 @@ const projects: Project[] = [
       'https://unsplash.com/photos/Cn87TISYij8/download?ixid=M3wxMjA3fDB8MXxhbGx8MjN8fHx8fHwyfHwxNzAwMTkzMTEwfA',
     rows: [
       [
-        'https://unsplash.com/photos/z61hzeqMuow/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8ODd8fGhvdXNlJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzAwMjg1NzM5fDA',
-      ],
-      [
         'https://unsplash.com/photos/Y8MJFQYYjh8/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzAwMjg2MTc0fA',
         'https://unsplash.com/photos/2gDwlIim3Uw/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzAwMjg2MTg1fA',
       ],

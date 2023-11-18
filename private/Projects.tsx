@@ -9,16 +9,14 @@ import Text from './Text';
 
 function Projects() {
   return (
-    <>
-      <Text id="projects" size={6}>
-        Projects
-      </Text>
+    <div id="projects" spaceY="8">
+      <Text size={6}>Projects</Text>
       <div className="Projects" display="grid" gap="4" gridTemplateColumns={['1', { '#': '2', '##': '3' }]}>
         {projects.map((project, i) => (
           <ProjectsProject {...project} i={projects.length - 1 - i} key={project.id} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
