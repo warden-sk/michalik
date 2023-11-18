@@ -19,7 +19,7 @@ const fontSizes: [string, number][] = [
   ['12', 3],
 ];
 
-let css = `.container {\n  container-type: inline-size !important;\n}\n`;
+let css = `/*\n * Copyright 2023 Marek Kobida\n */\n\n.container {\n  container-type: inline-size !important;\n}\n`;
 
 css += fontSizes.reduce(($, [n, fontSize], i) => {
   const f = i > 3 ? 1.75 : 1.25;
