@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import './fontSize.css';
+import '../fontSize.css';
 
 function Text({ size, ...$ }: EnhancedJSXElement<'div'> & { size?: number }) {
   return <div {...$} className={`f${size ?? 3}`} />;

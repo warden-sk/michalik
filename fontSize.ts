@@ -27,4 +27,4 @@ css += fontSizes.reduce(($, [n, fontSize], i) => {
   return ($ += `.f${n} {\n  font-size: clamp(${fontSize}rem, 3cqi, ${(fontSize * f).toFixed(3)}rem) !important;\n}\n`);
 }, '');
 
-fs.writeFileSync('/Users/marekkobida/Documents/warden/leopold/michalik/private/fontSize.css', css);
+fs.writeFileSync('/Users/marekkobida/Documents/warden/leopold/michalik/fontSize.css', css);
