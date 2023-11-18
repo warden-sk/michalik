@@ -25,6 +25,7 @@ body {
 }
 .PhotoLabel {
   -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
   background-color: hsla(0, 0%, 100%, 0.05);
   color: hsl(0, 0%, 100%);
 }
