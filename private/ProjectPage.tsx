@@ -77,15 +77,17 @@ function ProjectPage({ id }: { id: string }) {
                 </div>
               </div>
             </div>
-            <div display="grid" gap="4">
-              {project.rows.map(rows => (
-                <div display="grid" gap="4" gridTemplateColumns={rows.length.toString() as '1'}>
-                  {rows.map(row => (
-                    <img className="Photo" display="block" src={row} width="100" />
-                  ))}
-                </div>
-              ))}
-            </div>
+            {project.rows.length > 0 && (
+              <div display="grid" gap="4">
+                {project.rows.map(rows => (
+                  <div display="grid" gap="4" gridTemplateColumns={['1', { '#': rows.length.toString() as '1' }]}>
+                    {rows.map(row => (
+                      <img className="Photo" display="block" src={row} width="100" />
+                    ))}
+                  </div>
+                ))}
+              </div>
+            )}
           </Container>
         </div>
         <div className="Contact" pY="8">
