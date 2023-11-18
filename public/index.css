@@ -31,6 +31,19 @@ body {
   height: 24px;
   width: 24px;
 }
+
+.CJV2rX90 {
+  position: relative;
+}
+.QQ25kRJ- {
+  bottom: 0;
+  position: absolute;
+}
+.CJV2rX90 .Label {
+  -webkit-backdrop-filter: blur(0.5rem);
+  background-color: hsla(0, 0%, 100%, 0.05);
+  color: hsl(0, 0%, 1000%);
+}
 /*
  * Copyright 2023 Marek Kobida
  */
