@@ -13,6 +13,18 @@ import Text from './Text';
 function ProjectPage({ id }: { id: string }) {
   const project = projects.find(project => project.id === id);
 
+  React.useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        window.location.hash = '#/';
+      }
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, []);
+
   if (project) {
     return (
       <Container spaceY="8">

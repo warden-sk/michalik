@@ -3,9 +3,10 @@
  */
 
 import React from 'react';
+import context from './context';
 
 function useHashUrl(): string {
-  const [url, setUrl] = React.useState<string>('/');
+  const { setUrl, url } = React.useContext(context);
 
   React.useEffect(() => {
     const onHashChange = () => {

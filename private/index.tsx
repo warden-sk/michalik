@@ -6,6 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Contact from './Contact';
 import Container from './Container';
+import context from './helpers/context';
 import useHashUrl from './helpers/useHashUrl';
 import './index.css';
 import ProjectPage from './ProjectPage';
@@ -21,6 +22,16 @@ const labels: [string, string][] = [
 ];
 
 function Client() {
+  const [url, setUrl] = React.useState<string>('/');
+
+  return (
+    <context.Provider value={{ setUrl, url }}>
+      <Router />
+    </context.Provider>
+  );
+}
+
+function Router() {
   const url = useHashUrl();
 
   if (ProjectPagePattern.test(url)) {
