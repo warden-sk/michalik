@@ -4,13 +4,14 @@
 
 import React from 'react';
 import LeftArrowIcon from './icons/LeftArrowIcon';
+import Text from './Text';
 
 function ProjectsButton() {
   return (
     <a href="#/">
       <div alignItems="center" display="flex" opacity="50" spaceX="2">
         <LeftArrowIcon />
-        <div fontWeight="500">Projects</div>
+        <Text fontWeight="500">Projects</Text>
       </div>
     </a>
   );
