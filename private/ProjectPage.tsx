@@ -6,8 +6,6 @@ import React from 'react';
 import Contact from './Contact';
 import Container from './Container';
 import projects from './helpers/projects';
-import CalendarIcon from './icons/CalendarIcon';
-import MapIcon from './icons/MapIcon';
 import Photo from './Photo';
 import ProjectsButton from './ProjectsButton';
 import Text from './Text';
@@ -49,30 +47,22 @@ function ProjectPage({ id }: { id: string }) {
                   </div>
                 )}
                 <div alignItems="center" display="flex" justifyContent="space-around">
-                  <div spaceY="2" textAlign="left">
-                    <div alignItems="center" display="flex" justifyContent="flex-start" spaceX="2">
-                      <Text fontWeight="500" size={4}>
-                        Client
-                      </Text>
-                    </div>
+                  <div spaceY="2">
+                    <Text fontWeight="500" size={4}>
+                      Client
+                    </Text>
                     <Text>{project.who}</Text>
                   </div>
                   <div spaceY="2" textAlign="center">
-                    <div alignItems="center" display="flex" justifyContent="center" spaceX="2">
-                      <Text fontWeight="500" size={4}>
-                        Where
-                      </Text>
-                      <MapIcon />
-                    </div>
+                    <Text fontWeight="500" icon="MapIcon" justifyContent="center" size={4}>
+                      Where
+                    </Text>
                     <Text>{project.where}</Text>
                   </div>
                   <div spaceY="2" textAlign="right">
-                    <div alignItems="center" display="flex" justifyContent="flex-end" spaceX="2">
-                      <Text fontWeight="500" size={4}>
-                        When
-                      </Text>
-                      <CalendarIcon />
-                    </div>
+                    <Text fontWeight="500" icon="CalendarIcon" justifyContent="flex-end" size={4}>
+                      When
+                    </Text>
                     <Text>{project.when}</Text>
                   </div>
                 </div>

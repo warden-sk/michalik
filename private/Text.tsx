@@ -4,9 +4,26 @@
 
 import React from 'react';
 import '../fontSize.css';
+import icons from './icons';
 
-function Text({ size, ...$ }: EnhancedJSXElement<'div'> & { size?: number }) {
-  return <div {...$} className={`f${size ?? 3}`} />;
+function Text({
+  children,
+  icon,
+  size,
+  ...$
+}: EnhancedJSXElement<'div'> & { icon?: keyof typeof icons; size?: number }) {
+  if (icon) {
+    const Icon = icons[icon];
+
+    return (
+      <div {...$} alignItems="center" display="flex" spaceX="2">
+        <Icon />
+        <div children={children} className={`f${size ?? 3}`} />
+      </div>
+    );
+  }
+
+  return <div {...$} children={children} className={`f${size ?? 3}`} />;
 }
 
 export default Text;
