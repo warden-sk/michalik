@@ -73,11 +73,7 @@ function Router() {
           <Projects />
         </Container>
       </div>
-      <div className="Contact" pY="8">
-        <Container spaceY="8">
-          <Contact />
-        </Container>
-      </div>
+      <Contact />
     </>
   );
 }
