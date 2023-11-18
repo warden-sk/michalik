@@ -70,8 +70,10 @@ function ProjectPage({ id }: { id: string }) {
     <Container spaceY="8">
       <ProjectsButton />
       <div>
-        <div fontSize="8">Error</div>
-        <div>The project does not exist.</div>
+        <Text fontWeight="500" size={8}>
+          Error
+        </Text>
+        <Text size={5}>The project does not exist.</Text>
       </div>
     </Container>
   );
