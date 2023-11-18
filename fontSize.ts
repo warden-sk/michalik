@@ -24,7 +24,7 @@ let css = `.container {\n  container-type: inline-size !important;\n}\n`;
 css += fontSizes.reduce(($, [n, fontSize], i) => {
   const f = i > 3 ? 1.75 : 1.25;
 
-  return ($ += `.f${n} {\n  font-size: clamp(${fontSize}rem, 3cqi, ${fontSize * f}rem) !important;\n}\n`);
+  return ($ += `.f${n} {\n  font-size: clamp(${fontSize}rem, 3cqi, ${(fontSize * f).toFixed(3)}rem) !important;\n}\n`);
 }, '');
 
 fs.writeFileSync('/Users/marekkobida/Documents/warden/leopold/michalik/private/fontSize.css', css);
