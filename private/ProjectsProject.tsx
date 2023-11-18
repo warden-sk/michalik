@@ -10,7 +10,7 @@ function ProjectsProject({ description, i, id, labels, name, photoUrl }: Project
   return (
     <a className="ProjectsProject" href={`#/project/${id}`} spaceY="2">
       <Text size={6}>{(i + 1).toString().padStart(3, '0')}</Text>
-      <img borderRadius="3" className="ProjectsProjectPhoto" display="block" src={photoUrl} width="100" />
+      <img borderRadius="3" className="Photo ProjectsProjectPhoto" display="block" src={photoUrl} width="100" />
       {labels.length > 0 && (
         <div display="flex" spaceX="2">
           {labels.map(label => (

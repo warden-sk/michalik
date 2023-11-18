@@ -8,6 +8,7 @@ type Project = {
   labels: string[];
   name: string;
   photoUrl: string;
+  rows: string[][];
   when: number;
   where: string;
   who: string;

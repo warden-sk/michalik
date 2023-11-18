@@ -15,6 +15,7 @@ const projects: Project[] = [
     name: 'Suspendisse Congue',
     photoUrl:
       'https://unsplash.com/photos/wDDfbanbhl8/download?ixid=M3wxMjA3fDB8MXxhbGx8MjZ8fHx8fHwyfHwxNzAwMTkzMzg3fA',
+    rows: [],
     when: 2023,
     where: 'Praha',
     who: 'Marek Kobida',
@@ -29,6 +30,15 @@ const projects: Project[] = [
     name: 'Aenean Eleifend',
     photoUrl:
       'https://unsplash.com/photos/Cn87TISYij8/download?ixid=M3wxMjA3fDB8MXxhbGx8MjN8fHx8fHwyfHwxNzAwMTkzMTEwfA',
+    rows: [
+      [
+        'https://unsplash.com/photos/z61hzeqMuow/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8ODd8fGhvdXNlJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzAwMjg1NzM5fDA',
+      ],
+      [
+        'https://unsplash.com/photos/Y8MJFQYYjh8/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzAwMjg2MTc0fA',
+        'https://unsplash.com/photos/2gDwlIim3Uw/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzAwMjg2MTg1fA',
+      ],
+    ],
     when: 2023,
     where: 'Praha',
     who: 'Marek Kobida',
@@ -43,6 +53,7 @@ const projects: Project[] = [
     name: 'Quisque Urna',
     photoUrl:
       'https://unsplash.com/photos/KQgrVfR3r74/download?ixid=M3wxMjA3fDB8MXxhbGx8NDF8fHx8fHwyfHwxNzAwMTkzMTE3fA',
+    rows: [],
     when: 2023,
     where: 'Praha',
     who: 'Marek Kobida',
@@ -57,6 +68,7 @@ const projects: Project[] = [
     name: 'Phasellus Turpis',
     photoUrl:
       'https://unsplash.com/photos/wJAOeXvxudM/download?ixid=M3wxMjA3fDB8MXxhbGx8NTR8fHx8fHwyfHwxNzAwMTkzNDI0fA',
+    rows: [],
     when: 2023,
     where: 'Praha',
     who: 'Marek Kobida',
