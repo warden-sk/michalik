@@ -5,7 +5,12 @@
 import React from 'react';
 import Text from './Text';
 
-function Photo({ labels = [], url }: { labels?: string[]; url: string }) {
+type P = {
+  labels?: string[];
+  url: string;
+};
+
+function Photo({ labels = [], url }: P) {
   return (
     <div className="Photo">
       <img borderRadius="3" display="block" src={url} width="100" />

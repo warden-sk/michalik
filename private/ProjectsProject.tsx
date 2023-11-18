@@ -7,7 +7,11 @@ import type { Project } from './helpers/types';
 import Photo from './Photo';
 import Text from './Text';
 
-function ProjectsProject({ description, i, id, labels, name, photoUrl }: Project & { i: number }) {
+type P = Project & {
+  i: number;
+};
+
+function ProjectsProject({ description, i, id, labels, name, photoUrl }: P) {
   return (
     <a className="ProjectsProject" href={`#/project/${id}`} spaceY="2">
       <Text size={6}>{(i + 1).toString().padStart(3, '0')}</Text>

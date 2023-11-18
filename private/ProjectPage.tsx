@@ -10,7 +10,11 @@ import Photo from './Photo';
 import ProjectsButton from './ProjectsButton';
 import Text from './Text';
 
-function ProjectPage({ id }: { id: string }) {
+type P = {
+  id: string;
+};
+
+function ProjectPage({ id }: P) {
   const project = projects.find(project => project.id === id);
 
   React.useEffect(() => {
