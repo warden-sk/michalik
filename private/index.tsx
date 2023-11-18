@@ -16,7 +16,7 @@ import Text from './Text';
 const ProjectPagePattern = /\/project\/(.+)/;
 
 const labels: [string, string][] = [
-  ['Services', '#services'],
+  // ['Services', '#services'],
   ['Projects', '#projects'],
   ['Contact', '#contact'],
   ['Bēhance', 'https://www.behance.net/mariomichalik'],
