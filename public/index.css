@@ -14,7 +14,7 @@ body {
 }
 .Label {
   background-color: hsl(0, 0%, 87.5%);
-  border-radius: 1rem;
+  border-radius: 999rem;
 }
 .Projects {
 }
@@ -28,4 +28,47 @@ body {
 .icon {
   height: 24px;
   width: 24px;
+}
+/*
+ * Copyright 2023 Marek Kobida
+ */
+
+.container {
+  container-type: inline-size !important;
+}
+.f1 {
+  font-size: clamp(0.75rem, 3cqi, 1.125rem) !important;
+}
+.f2 {
+  font-size: clamp(0.875rem, 3cqi, 1.3125rem) !important;
+}
+.f3 {
+  font-size: clamp(1rem, 3cqi, 1.5rem) !important;
+}
+.f4 {
+  font-size: clamp(1.125rem, 3cqi, 1.6875rem) !important;
+}
+.f5 {
+  font-size: clamp(1.25rem, 3cqi, 1.875rem) !important;
+}
+.f6 {
+  font-size: clamp(1.5rem, 3cqi, 2.25rem) !important;
+}
+.f7 {
+  font-size: clamp(1.75rem, 3cqi, 2.625rem) !important;
+}
+.f8 {
+  font-size: clamp(2rem, 3cqi, 3rem) !important;
+}
+.f9 {
+  font-size: clamp(2.25rem, 3cqi, 3.375rem) !important;
+}
+.f10 {
+  font-size: clamp(2.5rem, 3cqi, 3.75rem) !important;
+}
+.f11 {
+  font-size: clamp(2.75rem, 3cqi, 4.125rem) !important;
+}
+.f12 {
+  font-size: clamp(3rem, 3cqi, 4.5rem) !important;
 }

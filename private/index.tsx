@@ -10,6 +10,7 @@ import useHashUrl from './helpers/useHashUrl';
 import './index.css';
 import ProjectPage from './ProjectPage';
 import Projects from './Projects';
+import Text from './Text';
 
 const ProjectPagePattern = /\/project\/(.+)/;
 
@@ -33,12 +34,14 @@ function Client() {
       <div pY="8">
         <Container spaceY="8">
           <div>
-            <div fontSize="8">Mário Michalík</div>
-            <div width={['100', { '###': '6/12' }]}>
+            <Text fontWeight="500" size={8}>
+              Mário Michalík
+            </Text>
+            <Text size={4} width={['100', { '###': '9/12' }]}>
               I run a Prague-based creative studio that focuses on architectural design solutions. In addition to
               providing design services, I have the ability to handcraft unique stories using a variety of visual tools.
               Whether it's through still images, 360° panoramas, or animations, I bring your projects to life.
-            </div>
+            </Text>
           </div>
           <div display="flex" spaceX="2">
             {labels.map(([label, url]) => (
@@ -51,7 +54,7 @@ function Client() {
                 pY="1"
                 target={/^https/.test(url) ? '_blank' : '_self'}
               >
-                {label}
+                <Text>{label}</Text>
               </a>
             ))}
           </div>

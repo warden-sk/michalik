@@ -5,13 +5,14 @@
 import React from 'react';
 import projects from './helpers/projects';
 import ProjectsProject from './ProjectsProject';
+import Text from './Text';
 
 function Projects() {
   return (
     <>
-      <div fontSize="6" id="projects">
+      <Text id="projects" size={6}>
         Projects
-      </div>
+      </Text>
       <div className="Projects" display="grid" gap="4" gridTemplateColumns={['1', { '#': '2', '##': '3' }]}>
         {projects.map((project, i) => (
           <ProjectsProject {...project} i={projects.length - 1 - i} key={project.id} />

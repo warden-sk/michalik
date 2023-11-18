@@ -5,25 +5,26 @@
 import React from 'react';
 import MailIcon from './icons/MailIcon';
 import PhoneIcon from './icons/PhoneIcon';
+import Text from './Text';
 
 function Contact() {
   return (
     <>
-      <div fontSize="6" id="contact">
+      <Text id="contact" size={6}>
         Contact
-      </div>
+      </Text>
       <div>
-        <div fontWeight="500">Ing. arch. Mário Michalík</div>
-        <div>Jeseniova 846/27, 130 00 Praha 3</div>
+        <Text fontWeight="500">Ing. arch. Mário Michalík</Text>
+        <Text>Jeseniova 846/27, 130 00 Praha 3</Text>
       </div>
       <div spaceY="2">
         <div alignItems="center" display="flex" spaceX="2">
           <MailIcon />
-          <div>mario@michalik.studio</div>
+          <Text>mario@michalik.studio</Text>
         </div>
         <div alignItems="center" display="flex" spaceX="2">
           <PhoneIcon />
-          <div>+421 917 806 935</div>
+          <Text>+421 917 806 935</Text>
         </div>
       </div>
     </>
