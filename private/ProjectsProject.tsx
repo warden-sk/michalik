@@ -22,7 +22,9 @@ function ProjectsProject({ description, i, id, labels, name, photoUrl }: Project
       )}
       <div>
         <Text fontWeight="500">{name}</Text>
-        <Text opacity="50">{description[0]}</Text>
+        <Text lineHeight="2" opacity="50">
+          {description[0]}
+        </Text>
       </div>
     </a>
   );

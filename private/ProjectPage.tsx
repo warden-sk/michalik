@@ -22,7 +22,7 @@ function ProjectPage({ id }: { id: string }) {
             {project.name}
           </Text>
           <div spaceY="8" width={['100', { '###': '9/12' }]}>
-            <Text size={4}>{project.description[1]}</Text>
+            <Text size={5}>{project.description[1]}</Text>
             {project.labels.length > 0 && (
               <div display="flex" spaceX="2">
                 {project.labels.map(label => (
@@ -35,20 +35,26 @@ function ProjectPage({ id }: { id: string }) {
             <div alignItems="center" display="flex" justifyContent="space-around">
               <div spaceY="2" textAlign="left">
                 <div alignItems="center" display="flex" justifyContent="flex-start" spaceX="2">
-                  <Text fontWeight="500">Client</Text>
+                  <Text fontWeight="500" size={4}>
+                    Client
+                  </Text>
                 </div>
                 <Text>{project.who}</Text>
               </div>
               <div spaceY="2" textAlign="center">
                 <div alignItems="center" display="flex" justifyContent="center" spaceX="2">
-                  <Text fontWeight="500">Where</Text>
+                  <Text fontWeight="500" size={4}>
+                    Where
+                  </Text>
                   <MapIcon />
                 </div>
                 <Text>{project.where}</Text>
               </div>
               <div spaceY="2" textAlign="right">
                 <div alignItems="center" display="flex" justifyContent="flex-end" spaceX="2">
-                  <Text fontWeight="500">When</Text>
+                  <Text fontWeight="500" size={4}>
+                    When
+                  </Text>
                   <CalendarIcon />
                 </div>
                 <Text>{project.when}</Text>

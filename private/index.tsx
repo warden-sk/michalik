@@ -37,7 +37,7 @@ function Client() {
             <Text fontWeight="500" size={8}>
               Mário Michalík
             </Text>
-            <Text size={4} width={['100', { '###': '9/12' }]}>
+            <Text size={5} width={['100', { '###': '9/12' }]}>
               I run a Prague-based creative studio that focuses on architectural design solutions. In addition to
               providing design services, I have the ability to handcraft unique stories using a variety of visual tools.
               Whether it's through still images, 360° panoramas, or animations, I bring your projects to life.

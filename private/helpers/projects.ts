@@ -8,7 +8,7 @@ const projects: Project[] = [
   {
     description: [
       'Morbi dignissim convallis feugiat.',
-      'Morbi dignissim convallis feugiat. Vestibulum facilisis nunc eu augue tempus interdum. Nulla mollis fermentum fermentum. Curabitur ut quam mattis, interdum quam in, iaculis dui. Curabitur et lacus lacus. Maecenas lectus est, molestie porta finibus venenatis, facilisis at nibh. Duis vel malesuada eros. Sed at ornare nisi, in faucibus tortor. Nullam lectus urna, tempor a ornare sit amet, facilisis a ex. Donec tempus nibh vulputate turpis gravida tincidunt. Suspendisse dignissim dignissim mauris, sed congue nisl dapibus eu. Sed accumsan tristique dolor at ornare. Duis ac porta nibh.',
+      'Morbi dignissim convallis feugiat. Vestibulum facilisis nunc eu augue tempus interdum. Nulla mollis fermentum fermentum. Curabitur ut quam mattis, interdum quam in, iaculis dui. Curabitur et lacus lacus. Maecenas lectus est, molestie porta finibus venenatis, facilisis at nibh. Duis vel malesuada eros. Sed at ornare nisi, in faucibus tortor. Nullam lectus urna, tempor a ornare sit amet, facilisis a ex. Donec tempus nibh vulputate turpis gravida tincidunt.',
     ],
     id: 'suspendisse-congue',
     labels: ['Illustration'],
@@ -22,7 +22,7 @@ const projects: Project[] = [
   {
     description: [
       'Sed vel iaculis neque.',
-      'Sed vel iaculis neque. Fusce eget tellus viverra, vulputate urna in, vestibulum ante. Pellentesque dui arcu, dignissim at tempus sit amet, dapibus in dui. Curabitur sagittis nisi nec vulputate vehicula. Pellentesque in ultrices nisi, eu porta urna. Donec viverra nulla leo, eu tincidunt lacus imperdiet eu. Phasellus rutrum feugiat tellus, pharetra lobortis nisl pellentesque ac. Suspendisse condimentum diam quis sapien tempor, a gravida libero posuere. Phasellus nulla lectus, cursus sed turpis a, blandit tincidunt mi.',
+      'Sed vel iaculis neque. Fusce eget tellus viverra, vulputate urna in, vestibulum ante. Pellentesque dui arcu, dignissim at tempus sit amet, dapibus in dui. Curabitur sagittis nisi nec vulputate vehicula. Pellentesque in ultrices nisi, eu porta urna. Donec viverra nulla leo, eu tincidunt lacus imperdiet eu. Phasellus rutrum feugiat tellus, pharetra lobortis nisl pellentesque ac.',
     ],
     id: 'aenean-eleifend',
     labels: ['Design', 'Illustration'],
@@ -36,7 +36,7 @@ const projects: Project[] = [
   {
     description: [
       'Donec at massa et felis faucibus laoreet.',
-      'Donec at massa et felis faucibus laoreet. Morbi mattis aliquam nunc, ut pellentesque libero feugiat at. Pellentesque tincidunt tempor massa, eu porta ante ultrices sit amet. Sed ut cursus felis. Aenean tempus neque et scelerisque dignissim. Pellentesque egestas ornare ante vitae varius. Nulla vestibulum, augue non dignissim eleifend, enim quam imperdiet enim, at tempus sem dolor vitae quam. Integer est neque, luctus at suscipit in, pretium quis velit.',
+      'Donec at massa et felis faucibus laoreet. Morbi mattis aliquam nunc, ut pellentesque libero feugiat at. Pellentesque tincidunt tempor massa, eu porta ante ultrices sit amet. Sed ut cursus felis. Aenean tempus neque et scelerisque dignissim. Pellentesque egestas ornare ante vitae varius.',
     ],
     id: 'quisque-urna',
     labels: ['Illustration'],
@@ -50,7 +50,7 @@ const projects: Project[] = [
   {
     description: [
       'Morbi a risus feugiat, ultrices lorem ut, rhoncus dui.',
-      'Morbi a risus feugiat, ultrices lorem ut, rhoncus dui. Quisque sed risus luctus, hendrerit sem at, feugiat magna. Proin vitae scelerisque sem. Duis pellentesque, erat et venenatis consequat, eros purus vulputate risus, id tincidunt orci eros non lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      'Morbi a risus feugiat, ultrices lorem ut, rhoncus dui. Quisque sed risus luctus, hendrerit sem at, feugiat magna. Proin vitae scelerisque sem. Duis pellentesque, erat et venenatis consequat, eros purus vulputate risus, id tincidunt orci eros non lectus.',
     ],
     id: 'phasellus-turpis',
     labels: ['Illustration'],
