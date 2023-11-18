@@ -16,6 +16,7 @@ body {
   border-radius: 999rem;
 }
 .Photo img {
+  aspect-ratio: 4/3;
   background-color: hsl(0, 0%, 25%);
   object-fit: cover;
 }
@@ -30,9 +31,6 @@ body {
 .PhotoLabels {
   bottom: 0;
   position: absolute;
-}
-.Projects .Photo img {
-  aspect-ratio: 4/3;
 }
 .icon {
   height: 24px;
