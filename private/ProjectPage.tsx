@@ -44,7 +44,7 @@ function ProjectPage({ id }: P) {
                 {project.labels.length > 0 && (
                   <div display="flex" spaceX="2">
                     {project.labels.map(label => (
-                      <Text className="Label" key={label} pX="3" pY="1" size={2}>
+                      <Text className="Label" key={label} pX="4" pY="2">
                         {label}
                       </Text>
                     ))}

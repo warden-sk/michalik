@@ -66,8 +66,8 @@ function Router() {
                   cursor="pointer"
                   href={url}
                   key={label}
-                  pX="3"
-                  pY="1"
+                  pX="4"
+                  pY="2"
                   style={{
                     backgroundColor: isBēhance && '#0057ff',
                     color: isBēhance && '#fff',
