@@ -18,12 +18,16 @@ function Text({ children, icon, size = 3, ...$ }: P) {
     return (
       <div {...$} alignItems="center" display="flex" spaceX="2">
         <Icon />
-        <div children={children} className={`f${size}`} />
+        <div className={`f${size}`}>{children}</div>
       </div>
     );
   }
 
-  return <div {...$} children={children} className={`f${size}`} />;
+  return (
+    <div {...$} className={`f${size}`}>
+      {children}
+    </div>
+  );
 }
 
 export default Text;
