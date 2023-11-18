@@ -56,19 +56,27 @@ function Router() {
             </Text>
           </div>
           <div display="flex" spaceX="2">
-            {labels.map(([label, url]) => (
-              <a
-                className="Label"
-                cursor="pointer"
-                href={url}
-                key={label}
-                pX="3"
-                pY="1"
-                target={/^https/.test(url) ? '_blank' : '_self'}
-              >
-                <Text>{label}</Text>
-              </a>
-            ))}
+            {labels.map(([label, url]) => {
+              const isBēhance = label === 'Bēhance' ? true : undefined;
+
+              return (
+                <a
+                  className="Label"
+                  cursor="pointer"
+                  href={url}
+                  key={label}
+                  pX="3"
+                  pY="1"
+                  style={{
+                    backgroundColor: isBēhance && '#0057ff',
+                    color: isBēhance && '#fff',
+                  }}
+                  target={/^https/.test(url) ? '_blank' : '_self'}
+                >
+                  <Text icon={isBēhance && 'LinkIcon'}>{label}</Text>
+                </a>
+              );
+            })}
           </div>
           <Projects />
         </Container>
