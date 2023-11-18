@@ -58,13 +58,13 @@ function ProjectPage({ id }: P) {
                     <Text>{project.who}</Text>
                   </div>
                   <div spaceY="2" textAlign="center">
-                    <Text fontWeight="500" icon="MapIcon" justifyContent="center" size={4}>
+                    <Text fontWeight="500" /* justifyContent="center" */ size={4}>
                       Where
                     </Text>
                     <Text>{project.where}</Text>
                   </div>
                   <div spaceY="2" textAlign="right">
-                    <Text fontWeight="500" icon="CalendarIcon" justifyContent="flex-end" size={4}>
+                    <Text fontWeight="500" /* justifyContent="flex-end" */ size={4}>
                       When
                     </Text>
                     <Text>{project.when}</Text>
