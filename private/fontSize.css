@@ -1,3 +1,7 @@
+/*
+ * Copyright 2023 Marek Kobida
+ */
+
 .container {
   container-type: inline-size !important;
 }
@@ -8,7 +12,7 @@
   font-size: clamp(0.875rem, 3cqi, 1.094rem) !important;
 }
 .f3 {
-  font-size: clamp(1rem, 3cqi, 1.250rem) !important;
+  font-size: clamp(1rem, 3cqi, 1.25rem) !important;
 }
 .f4 {
   font-size: clamp(1.125rem, 3cqi, 1.406rem) !important;
@@ -23,7 +27,7 @@
   font-size: clamp(1.75rem, 3cqi, 3.063rem) !important;
 }
 .f8 {
-  font-size: clamp(2rem, 3cqi, 3.500rem) !important;
+  font-size: clamp(2rem, 3cqi, 3.5rem) !important;
 }
 .f9 {
   font-size: clamp(2.25rem, 3cqi, 3.938rem) !important;
@@ -35,5 +39,5 @@
   font-size: clamp(2.75rem, 3cqi, 4.813rem) !important;
 }
 .f12 {
-  font-size: clamp(3rem, 3cqi, 5.250rem) !important;
+  font-size: clamp(3rem, 3cqi, 5.25rem) !important;
 }
