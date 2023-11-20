@@ -62,7 +62,6 @@ function Router() {
               return (
                 <a
                   className="Label"
-                  cursor="pointer"
                   href={url}
                   key={label}
                   pX="4"
