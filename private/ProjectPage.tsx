@@ -36,11 +36,13 @@ function ProjectPage({ id }: P) {
           <Container spaceY="8">
             <ProjectsButton />
             <div>
-              <Text fontWeight="500" size={8}>
+              <Text fontWeight="500" lineHeight="2" size={8} whiteSpace="pre-line">
                 {project.name}
               </Text>
               <div spaceY="8" width={['100', { '###': '9/12' }]}>
-                <Text size={5}>{project.description[1]}</Text>
+                <Text size={5} whiteSpace="pre-line">
+                  {project.description[1]}
+                </Text>
                 {project.labels.length > 0 && (
                   <div display="flex" spaceX="2">
                     {project.labels.map(label => (

@@ -17,10 +17,10 @@ function ProjectsProject({ description, i, id, labels, name, photoUrl }: P) {
       <Text size={6}>{(i + 1).toString().padStart(3, '0')}</Text>
       <Photo labels={labels} url={photoUrl} />
       <div pX="2">
-        <Text fontWeight="500">{name}</Text>
-        <Text lineHeight="2" opacity="50">
-          {description[0]}
+        <Text fontWeight="500" lineHeight="2" whiteSpace="pre-line">
+          {name}
         </Text>
+        <Text opacity="50">{description[0]}</Text>
       </div>
     </a>
   );

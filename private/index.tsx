@@ -46,7 +46,7 @@ function Router() {
       <div pY="8">
         <Container spaceY="8">
           <div>
-            <Text fontWeight="500" size={8}>
+            <Text fontWeight="500" lineHeight="2" size={8}>
               Mário Michalík
             </Text>
             <Text className="Description" size={5} width={['100', { '###': '9/12' }]}>

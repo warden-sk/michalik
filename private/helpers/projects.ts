@@ -12,7 +12,7 @@ const projects: Project[] = [
     ],
     id: 'the-square-beneath-the-st-peter-and-paul-cathedral',
     labels: ['Design'],
-    name: 'The Square Beneath the St. Peter and Paul Cathedral',
+    name: 'The Square Beneath\nthe St. Peter and Paul Cathedral',
     photoUrl: './projects/the-square-beneath-the-st-peter-and-paul-cathedral/4.jpg',
     rows: [
       [
