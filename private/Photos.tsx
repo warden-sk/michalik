@@ -3,20 +3,32 @@
  */
 
 import React from 'react';
+import ReactDOM from 'react-dom';
 import type { Project } from './helpers/types';
 import Photo from './Photo';
 
 function Photos({ project }: { project: Project }) {
-  const [$, set$] = React.useState<[number, number]>([-1, -1]);
+  const [[i, j], set] = React.useState<[number, number]>([-1, -1]);
 
   if (project.rows.length) {
+    const row = project.rows[i]?.[j];
+
     return (
       <>
+        {row &&
+          ReactDOM.createPortal(
+            <div className="ekM_O-1O">
+              <div alignItems="center" display="flex" height="100" width="100">
+                <Photo key={row} url={`./projects/${project.id}/${row}`} />
+              </div>
+            </div>,
+            document.querySelector('#ekM_O-1O')!,
+          )}
         <div display="grid" gap="4">
           {project.rows.map((rows, i) => (
             <div display="grid" gap="4" gridTemplateColumns={['1', { '#': rows.length.toString() as '1' }]} key={i}>
               {rows.map((row, j) => (
-                <Photo key={row} onClick={() => set$([i, j])} url={`./projects/${project.id}/${row}`} />
+                <Photo key={row} onClick={() => set([i, j])} url={`./projects/${project.id}/${row}`} />
               ))}
             </div>
           ))}
