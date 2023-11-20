@@ -7,68 +7,35 @@ import type { Project } from './types';
 const projects: Project[] = [
   {
     description: [
-      'Morbi dignissim convallis feugiat.',
-      'Morbi dignissim convallis feugiat. Vestibulum facilisis nunc eu augue tempus interdum. Nulla mollis fermentum fermentum. Curabitur ut quam mattis, interdum quam in, iaculis dui. Curabitur et lacus lacus. Maecenas lectus est, molestie porta finibus venenatis, facilisis at nibh. Duis vel malesuada eros. Sed at ornare nisi, in faucibus tortor. Nullam lectus urna, tempor a ornare sit amet, facilisis a ex. Donec tempus nibh vulputate turpis gravida tincidunt.',
+      "Study of Brno's Town Hall",
+      "The primary focus was on creating a square beneath the St. Peter and Paul Cathedral to connect the emerging southern part of Brno with the historic city center. Another aspect of the study concentrated on building a new town hall for the oldest part of Brno – Brno Střed.\n\nThis building is envisioned as a 5-story lapidary block that gradually transitions into a receding crown, symbolizing the former walls in the area. Although the town hall's design is straightforward, its architectural significance is found in its intricate details and gradation. The entrance to the town hall aligns proportionally with the viaduct, providing clear orientation for visitors. The interior is well-organized and functional, featuring two identical atriums, one of which serves as a communication space.",
     ],
-    id: 'suspendisse-congue',
-    labels: ['Illustration'],
-    name: 'Suspendisse Congue',
-    photoUrl:
-      'https://unsplash.com/photos/wDDfbanbhl8/download?ixid=M3wxMjA3fDB8MXxhbGx8MjZ8fHx8fHwyfHwxNzAwMTkzMzg3fA',
-    rows: [],
-    when: 2023,
-    where: 'Praha',
-    who: 'Marek Kobida',
-  },
-  {
-    description: [
-      'Sed vel iaculis neque.',
-      'Sed vel iaculis neque. Fusce eget tellus viverra, vulputate urna in, vestibulum ante. Pellentesque dui arcu, dignissim at tempus sit amet, dapibus in dui. Curabitur sagittis nisi nec vulputate vehicula. Pellentesque in ultrices nisi, eu porta urna. Donec viverra nulla leo, eu tincidunt lacus imperdiet eu. Phasellus rutrum feugiat tellus, pharetra lobortis nisl pellentesque ac.',
-    ],
-    id: 'aenean-eleifend',
-    labels: ['Design', 'Illustration'],
-    name: 'Aenean Eleifend',
-    photoUrl:
-      'https://unsplash.com/photos/Cn87TISYij8/download?ixid=M3wxMjA3fDB8MXxhbGx8MjN8fHx8fHwyfHwxNzAwMTkzMTEwfA',
+    id: 'the-square-beneath-the-st-peter-and-paul-cathedral',
+    labels: ['Design'],
+    name: 'The Square Beneath the St. Peter and Paul Cathedral',
+    photoUrl: './projects/the-square-beneath-the-st-peter-and-paul-cathedral/4.jpg',
     rows: [
       [
-        'https://unsplash.com/photos/Y8MJFQYYjh8/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzAwMjg2MTc0fA',
-        'https://unsplash.com/photos/2gDwlIim3Uw/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzAwMjg2MTg1fA',
+        './projects/the-square-beneath-the-st-peter-and-paul-cathedral/1-1.jpg',
+        './projects/the-square-beneath-the-st-peter-and-paul-cathedral/1-2.jpg',
       ],
+      [
+        './projects/the-square-beneath-the-st-peter-and-paul-cathedral/2-1.jpg',
+        './projects/the-square-beneath-the-st-peter-and-paul-cathedral/2-2.jpg',
+      ],
+      [
+        './projects/the-square-beneath-the-st-peter-and-paul-cathedral/3-1.jpg',
+        './projects/the-square-beneath-the-st-peter-and-paul-cathedral/3-2.jpg',
+      ],
+      ['./projects/the-square-beneath-the-st-peter-and-paul-cathedral/4.jpg'],
+      ['./projects/the-square-beneath-the-st-peter-and-paul-cathedral/5.jpg'],
+      ['./projects/the-square-beneath-the-st-peter-and-paul-cathedral/6.jpg'],
+      ['./projects/the-square-beneath-the-st-peter-and-paul-cathedral/7.jpg'],
+      ['./projects/the-square-beneath-the-st-peter-and-paul-cathedral/8.jpg'],
     ],
     when: 2023,
-    where: 'Praha',
-    who: 'Marek Kobida',
-  },
-  {
-    description: [
-      'Donec at massa et felis faucibus laoreet.',
-      'Donec at massa et felis faucibus laoreet. Morbi mattis aliquam nunc, ut pellentesque libero feugiat at. Pellentesque tincidunt tempor massa, eu porta ante ultrices sit amet. Sed ut cursus felis. Aenean tempus neque et scelerisque dignissim. Pellentesque egestas ornare ante vitae varius.',
-    ],
-    id: 'quisque-urna',
-    labels: ['Illustration'],
-    name: 'Quisque Urna',
-    photoUrl:
-      'https://unsplash.com/photos/KQgrVfR3r74/download?ixid=M3wxMjA3fDB8MXxhbGx8NDF8fHx8fHwyfHwxNzAwMTkzMTE3fA',
-    rows: [],
-    when: 2023,
-    where: 'Praha',
-    who: 'Marek Kobida',
-  },
-  {
-    description: [
-      'Morbi a risus feugiat, ultrices lorem ut, rhoncus dui.',
-      'Morbi a risus feugiat, ultrices lorem ut, rhoncus dui. Quisque sed risus luctus, hendrerit sem at, feugiat magna. Proin vitae scelerisque sem. Duis pellentesque, erat et venenatis consequat, eros purus vulputate risus, id tincidunt orci eros non lectus.',
-    ],
-    id: 'phasellus-turpis',
-    labels: ['Illustration'],
-    name: 'Phasellus Turpis',
-    photoUrl:
-      'https://unsplash.com/photos/wJAOeXvxudM/download?ixid=M3wxMjA3fDB8MXxhbGx8NTR8fHx8fHwyfHwxNzAwMTkzNDI0fA',
-    rows: [],
-    when: 2023,
-    where: 'Praha',
-    who: 'Marek Kobida',
+    where: 'Brno',
+    who: 'Mário Michalík',
   },
 ];
 

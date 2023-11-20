@@ -13,7 +13,7 @@ type P = {
 function Photo({ labels = [], url }: P) {
   return (
     <div className="Photo">
-      <img borderRadius="3" display="block" src={url} width="100" />
+      <img /* borderRadius="3" */ display="block" src={url} width="100" />
       {labels.length > 0 && (
         <div className="PhotoLabels" display="flex" p="2" spaceX="2">
           {labels.map(label => (
