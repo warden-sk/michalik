@@ -6,7 +6,7 @@ import React from 'react';
 import Contact from './Contact';
 import Container from './Container';
 import projects from './helpers/projects';
-import Photo from './Photo';
+import Photos from './Photos';
 import ProjectsButton from './ProjectsButton';
 import Text from './Text';
 
@@ -72,17 +72,7 @@ function ProjectPage({ id }: P) {
                 </div>
               </div>
             </div>
-            {project.rows.length > 0 && (
-              <div display="grid" gap="4">
-                {project.rows.map(rows => (
-                  <div display="grid" gap="4" gridTemplateColumns={['1', { '#': rows.length.toString() as '1' }]}>
-                    {rows.map(row => (
-                      <Photo key={row} url={`./projects/${project.id}/${row}`} />
-                    ))}
-                  </div>
-                ))}
-              </div>
-            )}
+            <Photos project={project} />
           </Container>
         </div>
         <Contact />

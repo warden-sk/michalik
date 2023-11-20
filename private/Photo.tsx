@@ -5,12 +5,12 @@
 import React from 'react';
 import Text from './Text';
 
-type P = {
+type P = EnhancedJSXElement<'div'> & {
   labels?: string[];
   url: string;
 };
 
-function Photo({ labels = [], url }: P) {
+function Photo({ labels = [], url, ...$ }: P) {
   const testPhotoUrl = url.replace('/projects/', '/projects/test/');
 
   const img = React.useRef<HTMLImageElement>(null);
@@ -22,7 +22,7 @@ function Photo({ labels = [], url }: P) {
   }, []);
 
   return (
-    <div className="Photo">
+    <div {...$} className="Photo">
       <img borderRadius="3" display="block" ref={img} src={testPhotoUrl} width="100" />
       {labels.length > 0 && (
         <div className="PhotoLabels" display="flex" p="2" spaceX="2">
