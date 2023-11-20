@@ -19,7 +19,7 @@ function Contact() {
           <Text icon="MailIcon">mario@michalik.studio</Text>
           <Text icon="PhoneIcon">+421 917 806 935</Text>
         </div>
-        <a display="block" href="https://www.behance.net/mariomichalik">
+        <a display="block" href="https://www.behance.net/mariomichalik" target="_blank">
           <Text icon="LinkIcon">Bēhance</Text>
         </a>
       </Container>
