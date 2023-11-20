@@ -52,8 +52,7 @@ function Router() {
             <Text className="Description" size={5} width={['100', { '###': '9/12' }]}>
               I run a Prague-based creative studio that focuses on architectural design solutions. In addition to
               providing design services, I have the ability to handcraft unique stories using a variety of visual tools.
-              Whether it's through still images, <a href="#/">360° panoramas</a>, or animations, I bring your projects
-              to life.
+              Whether it's through still images, 360° panoramas, or animations, I bring your projects to life.
             </Text>
           </div>
           <div display="flex" spaceX="2">
