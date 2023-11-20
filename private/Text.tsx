@@ -16,7 +16,7 @@ function Text({ children, icon, size = 3, ...$ }: P) {
     const Icon = icons[icon];
 
     return (
-      <div {...$} alignItems="center" display="flex" spaceX="2">
+      <div {...$} alignItems="center" display="flex" spaceX="2" whiteSpace="pre-line">
         <Icon />
         <div className={`f${size}`}>{children}</div>
       </div>
@@ -24,7 +24,7 @@ function Text({ children, icon, size = 3, ...$ }: P) {
   }
 
   return (
-    <div {...$} className={`f${size}`}>
+    <div {...$} className={`f${size}`} whiteSpace="pre-line">
       {children}
     </div>
   );

@@ -12,9 +12,7 @@ function useHashUrl(): string {
     const onHashChange = () => {
       const hash = window.location.hash;
 
-      if (/^#\//.test(hash)) {
-        setUrl(hash.replace('#', ''));
-      }
+      hash.startsWith('#/') && setUrl(hash);
     };
 
     onHashChange();

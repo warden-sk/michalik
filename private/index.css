@@ -14,7 +14,7 @@ body {
 .Description a {
   color: #0057ff;
   text-decoration-line: underline;
-  text-decoration-style: wavy;
+  /* text-decoration-style: wavy; */
 }
 .Label {
   background-color: hsl(0, 0%, 87.5%);
@@ -36,6 +36,7 @@ body {
 }
 .PhotoLabels {
   bottom: 0;
+  left: 0;
   position: absolute;
 }
 .icon {
