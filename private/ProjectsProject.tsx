@@ -20,7 +20,6 @@ function ProjectsProject({ description, i, id, labels, name, photoUrl }: P) {
         <Text fontWeight="500" lineHeight="2">
           {name}
         </Text>
-        <Text opacity="50">{description[0]}</Text>
       </div>
     </a>
   );

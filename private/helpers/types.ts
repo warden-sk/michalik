@@ -3,7 +3,7 @@
  */
 
 type Project = {
-  description: [string, string];
+  description: string;
   id: string;
   labels: string[];
   name: string;

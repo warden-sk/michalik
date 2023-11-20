@@ -40,7 +40,7 @@ function ProjectPage({ id }: P) {
                 {project.name}
               </Text>
               <div spaceY="8" width={['100', { '###': '9/12' }]}>
-                <Text size={5}>{project.description[1]}</Text>
+                <Text size={5}>{project.description}</Text>
                 {project.labels.length > 0 && (
                   <div display="flex" spaceX="2">
                     {project.labels.map(label => (
@@ -94,7 +94,7 @@ function ProjectPage({ id }: P) {
     <Container spaceY="8">
       <ProjectsButton />
       <div>
-        <Text fontWeight="500" size={8}>
+        <Text fontWeight="500" lineHeight="2" size={8}>
           Error
         </Text>
         <Text size={5}>The project does not exist.</Text>

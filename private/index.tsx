@@ -68,10 +68,12 @@ function Router() {
                   key={label}
                   pX="4"
                   pY="2"
-                  style={{
-                    backgroundColor: isBēhance && '#0057ff',
-                    color: isBēhance && '#fff',
-                  }}
+                  style={
+                    {
+                      // backgroundColor: isBēhance && '#0057ff',
+                      // color: isBēhance && '#fff',
+                    }
+                  }
                   target={/^https/.test(url) ? '_blank' : '_self'}
                 >
                   <Text icon={isBēhance && 'LinkIcon'}>{label}</Text>

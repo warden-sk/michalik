@@ -16,11 +16,9 @@ function Photo({ labels = [], url }: P) {
   const img = React.useRef<HTMLImageElement>(null);
 
   React.useEffect(() => {
-    const highResImg = new Image();
-    highResImg.onload = () => {
-      img.current!.src = url;
-    };
-    highResImg.src = url;
+    const image = new Image();
+    image.addEventListener('load', () => (img.current!.src = url));
+    image.src = url;
   }, []);
 
   return (
