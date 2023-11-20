@@ -77,7 +77,7 @@ function ProjectPage({ id }: P) {
                 {project.rows.map(rows => (
                   <div display="grid" gap="4" gridTemplateColumns={['1', { '#': rows.length.toString() as '1' }]}>
                     {rows.map(row => (
-                      <Photo key={row} url={row} />
+                      <Photo key={row} url={`./projects/${project.id}/${row}`} />
                     ))}
                   </div>
                 ))}
