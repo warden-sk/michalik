@@ -20,28 +20,18 @@ body {
   background-color: hsl(0, 0%, 87.5%);
   border-radius: 999rem;
 }
-.Photo img {
-  aspect-ratio: 4/3;
-  /* background-color: hsl(0, 0%, 25%); */
-  object-fit: cover;
-}
-.Photo {
-  position: relative;
-}
-.PhotoLabel {
-  -webkit-backdrop-filter: blur(0.5rem);
-  backdrop-filter: blur(0.5rem);
-  background-color: hsla(0, 0%, 0%, 0.05);
-  color: hsl(0, 0%, 0%);
-}
-.PhotoLabels {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-}
 .icon {
   height: 24px;
   width: 24px;
+}
+.Photos {
+  background-color: hsl(0, 0%, 100%);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 /*
  * Copyright 2023 Marek Kobida
@@ -85,4 +75,26 @@ body {
 }
 .f12 {
   font-size: clamp(3rem, 3cqi, 5.25rem) !important;
+}
+/*
+ * Copyright 2023 Marek Kobida
+ */
+
+.Photo img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.Photo {
+  position: relative;
+}
+.PhotoLabel {
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+  background-color: hsla(0, 0%, 0%, 0.05);
+  color: hsl(0, 0%, 0%);
+}
+.PhotoLabels {
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
