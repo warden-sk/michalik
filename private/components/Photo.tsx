@@ -3,6 +3,7 @@
  */
 
 import React from 'react';
+import './Photo.css';
 import Text from './Text';
 
 type P = EnhancedJSXElement<'div'> & {
