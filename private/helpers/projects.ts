@@ -6,6 +6,17 @@ import type { Project } from './types';
 
 const projects: Project[] = [
   {
+    description: '',
+    id: 'pribor-adaptive-reuse',
+    labels: ['Archviz'],
+    name: 'Příbor Adaptive Reuse',
+    photoUrl: '2.jpg',
+    rows: [['1.jpg'], ['2.jpg'], ['3.jpg'], ['4-1.jpg', '4-2.jpg']],
+    when: 2023,
+    where: 'Příbor',
+    who: 'Barbora Štefková architekti s.r.o.',
+  },
+  {
     description:
       "The primary focus was on creating a square beneath the St. Peter and Paul Cathedral to connect the emerging southern part of Brno with the historic city center. Another aspect of the study concentrated on building a new town hall for the oldest part of Brno – Brno Střed.\n\nThis building is designed as a 5-story lapidary block that gradually transitions into a receding crown, symbolizing the former walls in the area. Although the town hall's design is straightforward, its architectural significance is found in its intricate details and gradation. The entrance to the town hall aligns proportionally with the viaduct, providing clear orientation for visitors. The interior is well-organized and functional, featuring two identical atriums, one of which serves as a communication space.",
     id: 'the-square-beneath-the-st-peter-and-paul-cathedral',
