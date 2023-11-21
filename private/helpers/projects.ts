@@ -7,6 +7,18 @@ import type { Project } from './types';
 const projects: Project[] = [
   {
     description: '',
+    id: 'research-and-education-center',
+    labels: ['Archviz', 'Design', 'Illustration'],
+    name: 'Research and Education Center',
+    photoUrl: '1.jpg',
+    rows: [['1.jpg'], ['2.jpg'], ['3-1.jpg', '3-2.jpg'], ['4.jpg'], ['5.jpg'], ['6-1.jpg', '6-2.jpg'], ['7.jpg']],
+    type: 'b',
+    when: 2022,
+    where: 'Velká Bystřice',
+    who: 'Mário Michalík',
+  },
+  {
+    description: '',
     id: 'pribor-adaptive-reuse',
     labels: ['Archviz'],
     name: 'Příbor Adaptive Reuse',
