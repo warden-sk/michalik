@@ -7,6 +7,18 @@ import type { Project } from './types';
 const projects: Project[] = [
   {
     description: '',
+    id: 'flat-h',
+    labels: ['3D Panorama', 'Archviz'],
+    name: 'Flat H',
+    photoUrl: '1.jpg',
+    rows: [['1.jpg'], ['2.jpg'], ['3-1.jpg', '3-2.jpg'], ['4.jpg'], ['5-1.jpg', '5-2.jpg'], ['6.jpg'], ['7.jpg']],
+    type: 'w',
+    when: 2023,
+    where: 'Praha',
+    who: 'LM architekti',
+  },
+  {
+    description: '',
     id: 'pribor-adaptive-reuse',
     labels: ['Archviz'],
     name: 'Příbor Adaptive Reuse',
