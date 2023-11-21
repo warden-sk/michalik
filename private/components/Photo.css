@@ -1,0 +1,22 @@
+/*
+ * Copyright 2023 Marek Kobida
+ */
+
+.Photo img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.Photo {
+  position: relative;
+}
+.PhotoLabel {
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+  background-color: hsla(0, 0%, 0%, 0.05);
+  color: hsl(0, 0%, 0%);
+}
+.PhotoLabels {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
