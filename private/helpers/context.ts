@@ -5,7 +5,7 @@
 import React from 'react';
 
 type Context = {
-  setUrl: (url: string) => void;
+  setUrl: React.Dispatch<React.SetStateAction<string>>;
   url: string;
 };
 
