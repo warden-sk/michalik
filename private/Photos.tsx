@@ -17,12 +17,12 @@ function Photos({ project }: { project: Project }) {
       <>
         {row &&
           ReactDOM.createPortal(
-            <div className="ekM_O-1O">
+            <div className="Photos">
               <div alignItems="center" display="flex" height="100" width="100">
                 <Photo key={row} url={`./projects/${project.id}/${row}`} />
               </div>
             </div>,
-            document.querySelector('#ekM_O-1O')!,
+            document.querySelector('#Photos')!,
           )}
         <div display="grid" gap="4">
           {project.rows.map((rows, i) => (

@@ -88,14 +88,12 @@ function Router() {
 }
 
 if (typeof window !== 'undefined') {
-  const root = ReactDOM.createRoot(document.querySelector('#client')!);
-
-  root.render(<Client />);
+  ReactDOM.createRoot(document.querySelector('#client')!).render(<Client />);
 }
 
 export default (
   <>
+    <div id="Photos" />
     <div id="client" />
-    <div id="ekM_O-1O" />
   </>
 );
