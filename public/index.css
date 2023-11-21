@@ -90,11 +90,19 @@ body {
 .PhotoLabel {
   -webkit-backdrop-filter: blur(0.5rem);
   backdrop-filter: blur(0.5rem);
-  background-color: hsla(0, 0%, 0%, 0.05);
-  color: hsl(0, 0%, 0%);
+  background-color: hsla(0, 0%, 20%, 0.05);
+  color: hsl(0, 0%, 20%);
 }
-.PhotoLabels {
+.PhotoLabels,
+.PhotoLabels\(b\),
+.PhotoLabels\(w\) {
   bottom: 0;
   left: 0;
   position: absolute;
+}
+.PhotoLabels\(b\) .PhotoLabel {
+  background-color: hsla(0, 0%, 90%, 0.05);
+  color: hsl(0, 0%, 90%);
+}
+.PhotoLabels\(w\) .PhotoLabel {
 }
