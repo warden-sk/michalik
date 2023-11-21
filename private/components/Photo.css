@@ -12,12 +12,14 @@
 .PhotoLabel {
   -webkit-backdrop-filter: blur(0.5rem);
   backdrop-filter: blur(0.5rem);
-  background-color: hsla(0, 0%, 0%, 0.1);
+  background-color: hsla(0, 0%, 0%, 0.05);
   color: hsl(0, 0%, 100%);
-  text-shadow: 0.0625rem 0.0625rem 0.125rem hsla(0, 0%, 0%, 0.1);
 }
 .PhotoLabels {
   bottom: 0;
   left: 0;
   position: absolute;
+}
+.PhotoLabels\(black\) .PhotoLabel {
+  color: hsl(0, 0%, 0%);
 }

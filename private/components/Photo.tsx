@@ -22,11 +22,13 @@ function Photo({ labels = [], url, ...$ }: P) {
     image.src = url;
   }, []);
 
+  const isBlack = /cafe-bistro|flat-h|the-square-beneath-the-st-peter-and-paul-cathedral/.test(url);
+
   return (
     <div {...$} className="Photo">
       <img borderRadius="3" display="block" ref={img} src={testPhotoUrl} width="100" />
       {labels.length > 0 && (
-        <div className="PhotoLabels" display="flex" p="2" spaceX="2">
+        <div className={['PhotoLabels', { 'PhotoLabels(black)': isBlack }]} display="flex" p="2" spaceX="2">
           {labels.map(label => (
             <Text className="Label PhotoLabel" key={label} pX="4" pY="2" size={2}>
               {label}
