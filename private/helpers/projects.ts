@@ -15,7 +15,7 @@ const projects: Project[] = [
     type: 'w',
     when: 2023,
     where: 'Praha',
-    who: 'LM architekti',
+    who: 'LM architects',
   },
   {
     description: '',
@@ -27,7 +27,7 @@ const projects: Project[] = [
     type: 'b',
     when: 2023,
     where: 'Příbor',
-    who: 'Barbora Štefková architekti s.r.o.',
+    who: 'Barbora Štefková architects',
   },
   {
     description: '',
@@ -48,7 +48,7 @@ const projects: Project[] = [
     type: 'b',
     when: 2023,
     where: 'Liberec',
-    who: 'LM architekti',
+    who: 'LM architects',
   },
   {
     description: '',
@@ -110,7 +110,7 @@ const projects: Project[] = [
     id: 'cafe-bistro',
     labels: ['Archviz', 'Design', 'Illustration'],
     name: 'Café Bistro',
-    photoUrl: '1.jpg',
+    photoUrl: '5-2.jpg',
     rows: [
       ['1.jpg'],
       ['2.jpg'],
@@ -121,7 +121,7 @@ const projects: Project[] = [
       ['7-1.jpg', '7-2.jpg'],
       ['8-1.jpg', '8-2.jpg'],
     ],
-    type: 'b',
+    type: 'w',
     when: 2022,
     where: 'Ostrava',
     who: 'Mário Michalík',
