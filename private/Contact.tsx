@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import Container from './Container';
-import Text from './Text';
+import Container from './components/Container';
+import Text from './components/Text';
 
 function Contact() {
   return (

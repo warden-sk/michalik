@@ -3,9 +3,9 @@
  */
 
 import React from 'react';
+import Text from './components/Text';
 import projects from './helpers/projects';
 import ProjectsProject from './ProjectsProject';
-import Text from './Text';
 
 function Projects() {
   return (

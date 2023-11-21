@@ -3,12 +3,12 @@
  */
 
 import React from 'react';
-import Contact from './Contact';
-import Container from './Container';
-import projects from './helpers/projects';
-import Photos from './Photos';
-import ProjectsButton from './ProjectsButton';
-import Text from './Text';
+import Container from '../components/Container';
+import Text from '../components/Text';
+import Contact from '../Contact';
+import projects from '../helpers/projects';
+import Photos from '../Photos';
+import ProjectsButton from '../ProjectsButton';
 
 type P = {
   id: string;

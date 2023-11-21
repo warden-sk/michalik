@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import Text from './Text';
+import Text from './components/Text';
 
 function ProjectsButton() {
   return (

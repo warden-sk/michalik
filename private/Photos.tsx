@@ -4,8 +4,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Photo from './components/Photo';
 import type { Project } from './helpers/types';
-import Photo from './Photo';
 
 function Photos({ project }: { project: Project }) {
   const [[i, j], set] = React.useState<[number, number]>([-1, -1]);

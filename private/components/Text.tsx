@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import '../fontSize.css';
-import icons from './icons';
+import '../../fontSize.css';
+import icons from '../icons';
 
 type P = EnhancedJSXElement<'div'> & {
   icon?: keyof typeof icons;

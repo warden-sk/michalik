@@ -4,14 +4,14 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Container from './components/Container';
+import Text from './components/Text';
 import Contact from './Contact';
-import Container from './Container';
 import context from './helpers/context';
 import useHashUrl from './helpers/useHashUrl';
 import './index.css';
-import ProjectPage from './ProjectPage';
+import ProjectPage from './pages/ProjectPage';
 import Projects from './Projects';
-import Text from './Text';
 
 const ProjectPagePattern = /\/project\/(.+)/;
 

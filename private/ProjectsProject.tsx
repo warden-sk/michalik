@@ -3,15 +3,15 @@
  */
 
 import React from 'react';
+import Photo from './components/Photo';
+import Text from './components/Text';
 import type { Project } from './helpers/types';
-import Photo from './Photo';
-import Text from './Text';
 
 type P = Project & {
   i: number;
 };
 
-function ProjectsProject({ description, i, id, labels, name, photoUrl }: P) {
+function ProjectsProject({ i, id, labels, name, photoUrl }: P) {
   return (
     <a className="ProjectsProject" href={`#/project/${id}`} spaceY="2">
       <Text size={6}>{(i + 1).toString().padStart(3, '0')}</Text>
