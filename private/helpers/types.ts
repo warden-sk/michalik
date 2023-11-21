@@ -9,6 +9,7 @@ type Project = {
   name: string;
   photoUrl: string;
   rows: string[][];
+  type: 'b' | 'w';
   when: number;
   where: string;
   who: string;
