@@ -8,11 +8,10 @@ import Text from './Text';
 
 type P = EnhancedJSXElement<'div'> & {
   labels?: string[];
-  type: 'b' | 'w';
   url: string;
 };
 
-function Photo({ labels = [], type, url, ...$ }: P) {
+function Photo({ labels = [], url, ...$ }: P) {
   const testPhotoUrl = url.replace('/projects/', '/projects/test/');
 
   const img = React.useRef<HTMLImageElement>(null);
@@ -27,7 +26,7 @@ function Photo({ labels = [], type, url, ...$ }: P) {
     <div {...$} className="Photo">
       <img borderRadius="3" display="block" ref={img} src={testPhotoUrl} width="100" />
       {labels.length > 0 && (
-        <div className={`PhotoLabels(${type})`} display="flex" p="2" spaceX="2">
+        <div className="PhotoLabels" display="flex" p="2" spaceX="2">
           {labels.map(label => (
             <Text className="Label PhotoLabel" key={label} pX="4" pY="2" size={2}>
               {label}
