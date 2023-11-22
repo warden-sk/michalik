@@ -20,12 +20,12 @@ const projects: Project[] = [
     description: '',
     id: 'pribor-adaptive-reuse',
     labels: ['Archviz'],
-    name: 'Příbor Adaptive Reuse',
+    name: 'Pribor Adaptive Reuse',
     photoUrl: '1.jpg',
     rows: [['1.jpg'], ['2.jpg'], ['3.jpg'], ['4-1.jpg', '4-2.jpg']],
     when: 2023,
-    where: 'Příbor',
-    who: 'Barbora Štefková architects',
+    where: 'Pribor',
+    who: 'Barbora Stefkova architects',
   },
   {
     description: '',
@@ -55,8 +55,8 @@ const projects: Project[] = [
     photoUrl: '1.jpg',
     rows: [['1.jpg'], ['2.jpg'], ['3-1.jpg', '3-2.jpg'], ['4.jpg'], ['5.jpg'], ['6-1.jpg', '6-2.jpg'], ['7.jpg']],
     when: 2022,
-    where: 'Velká Bystřice',
-    who: 'Mário Michalík',
+    where: 'Velka Bystrice',
+    who: 'Mario Michalik',
   },
   {
     description:
@@ -77,7 +77,7 @@ const projects: Project[] = [
     ],
     when: 2023,
     where: 'Brno',
-    who: 'Mário Michalík',
+    who: 'Mario Michalik',
   },
   {
     description: '',
@@ -97,13 +97,13 @@ const projects: Project[] = [
     ],
     when: 2022,
     where: 'Ostrava',
-    who: 'Mário Michalík',
+    who: 'Mario Michalik',
   },
   {
     description: '',
     id: 'cafe-bistro',
     labels: ['Archviz', 'Design', 'Illustration'],
-    name: 'Café Bistro',
+    name: 'Cafe Bistro',
     photoUrl: '5-2.jpg',
     rows: [
       ['1.jpg'],
@@ -117,7 +117,7 @@ const projects: Project[] = [
     ],
     when: 2022,
     where: 'Ostrava',
-    who: 'Mário Michalík',
+    who: 'Mario Michalik',
   },
 ];
 
