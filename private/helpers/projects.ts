@@ -48,7 +48,8 @@ const projects: Project[] = [
     who: 'LM architects',
   },
   {
-    description: '',
+    description:
+      'The designated area is situated in Velka Bystrice, a town located 10 kilometers from Olomouc. At present, this site is home to a baroque granary owned by the Olomouc Chapter. The granary is currently vacant and in a state of disrepair, not being used for any specific purpose.\n\nThe proposed plan aims to develop a research and educational complex adjacent to the granary. This complex will include a guesthouse for accommodation, a hydroponic greenhouse for both cultivation and research purposes, and a restaurant situated opposite the guesthouse. Additionally, the granary is planned to be repurposed to host a variety of lectures, covering a wide range of subjects beyond just cultivation-related topics.',
     id: 'research-and-education-center',
     labels: ['Archviz', 'Design', 'Illustration'],
     name: 'Research and Education Center',
@@ -80,7 +81,8 @@ const projects: Project[] = [
     who: 'Mario Michalik',
   },
   {
-    description: '',
+    description:
+      'The massing solution makes full use of the entire site, filling the gap. The mass adheres to the boundary of the designated plot for the School of Architecture and a section of the Faculty of Arts at the University of Ostrava. The height limitation is set by the Bachner department store (Hornik). The design of the building is centered around four atriums, which also function as spaces for vertical communication.',
     id: 'ostrava-faculty-of-architecture-and-design',
     labels: ['Design', 'Illustration'],
     name: 'Ostrava Faculty of Architecture and Design',
@@ -100,7 +102,8 @@ const projects: Project[] = [
     who: 'Mario Michalik',
   },
   {
-    description: '',
+    description:
+      'The proposed interior project is located in the heart of Ostrava, on Masaryk Square. It covers a two-story area, which was previously a restaurant with a brewery but is currently unoccupied. The entrances are situated on the side facing the square.\n\nThe interior design plan aims to create a functional and harmonious space that stands out from its surroundings. The project predominantly features pastel colors, terrazzo, and wooden cladding.',
     id: 'cafe-bistro',
     labels: ['Archviz', 'Design', 'Illustration'],
     name: 'Cafe Bistro',
