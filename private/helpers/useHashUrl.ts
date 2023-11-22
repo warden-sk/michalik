@@ -22,6 +22,8 @@ function useHashUrl(): string {
     return () => window.removeEventListener('hashchange', onHashChange);
   }, []);
 
+  React.useEffect(() => window.scrollTo(0, 0), [url]);
+
   return url;
 }
 
