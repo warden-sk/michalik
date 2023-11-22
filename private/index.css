@@ -11,10 +11,6 @@ body {
 .Contact {
   background-color: hsl(0, 0%, 87.5%);
 }
-.Description a {
-  text-decoration-line: underline;
-  /* text-decoration-style: wavy; */
-}
 .Label {
   background-color: hsl(0, 0%, 87.5%);
   border-radius: 999rem;

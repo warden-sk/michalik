@@ -45,14 +45,17 @@ function Router() {
     <>
       <div pY="8">
         <Container spaceY="8">
-          <div>
-            <Text fontWeight="500" lineHeight="2" size={8}>
-              Mário Michalík
+          <div spaceY="4">
+            <Text size={5} width={['100', { '###': '9/12' }]}>
+              I'm Mario Michalik, and I run a creative studio focusing on architectural design solutions. As a freelance
+              creator, I support architecture studios, individual architects, and others. In addition to providing
+              design services, I have the ability to handcraft unique stories using an array of visual tools. Whether
+              it's through still images, 360° panoramas, or animations, I bring projects to life. Some selected works
+              provide an overview of the spectrum of my concrete experiences and abilities.
             </Text>
-            <Text className="Description" size={5} width={['100', { '###': '9/12' }]}>
-              I run a Prague-based creative studio that focuses on architectural design solutions. In addition to
-              providing design services, I have the ability to handcraft unique stories using a variety of visual tools.
-              Whether it's through still images, 360° panoramas, or animations, I bring your projects to life.
+            <Text size={5} width={['100', { '###': '9/12' }]}>
+              If you're interested in my approach and work, please feel free to ask for more details. We can discuss the
+              entire process from start to finish.
             </Text>
           </div>
           <div display="flex" spaceX="2">
