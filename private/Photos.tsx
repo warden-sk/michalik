@@ -3,10 +3,14 @@
  */
 
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Photo from './components/Photo';
 import moveLeft from './helpers/moveLeft';
 import moveRight from './helpers/moveRight';
 import type { Project } from './helpers/types';
+import LeftArrowIcon from './icons/LeftArrowIcon';
+import RightArrowIcon from './icons/RightArrowIcon';
+import XIcon from './icons/XIcon';
 
 type P = {
   i: number;
@@ -37,9 +41,12 @@ function Test({ i, j, project, set }: P) {
   if (row) {
     return (
       <div className="Photos">
+        <XIcon cursor="pointer" onClick={() => set(moveLeft(-1, -1, project))} />
+        <LeftArrowIcon cursor="pointer" onClick={() => set(moveLeft(i, j, project))} />
         <div alignItems="center" display="flex" height="100" width="100">
           <Photo key={row} url={`./projects/${project.id}/${row}`} />
         </div>
+        <RightArrowIcon cursor="pointer" onClick={() => set(moveRight(i, j, project))} />
       </div>
     );
   }
@@ -51,7 +58,7 @@ function Photos({ project }: { project: Project }) {
   if (project.rows.length) {
     return (
       <>
-        {/* ReactDOM.createPortal(<Test i={i} j={j} project={project} set={set} />, document.querySelector('#Photos')!) */}
+        {ReactDOM.createPortal(<Test i={i} j={j} project={project} set={set} />, document.querySelector('#Photos')!)}
         <div display="grid" gap="4">
           {project.rows.map((rows, i) => (
             <div display="grid" gap="4" gridTemplateColumns={['1', { '#': rows.length.toString() as '1' }]} key={i}>
