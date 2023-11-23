@@ -8,6 +8,8 @@ import LinkIcon from './LinkIcon';
 import MailIcon from './MailIcon';
 import MapIcon from './MapIcon';
 import PhoneIcon from './PhoneIcon';
+import RightArrowIcon from './RightArrowIcon';
+import XIcon from './XIcon';
 
 const icons = {
   CalendarIcon,
@@ -16,6 +18,8 @@ const icons = {
   MailIcon,
   MapIcon,
   PhoneIcon,
+  RightArrowIcon,
+  XIcon,
 };
 
 export default icons;
