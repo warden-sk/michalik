@@ -13,7 +13,7 @@ const projects: Project[] = [
     photoUrl: '1.jpg',
     rows: [['1.jpg'], ['2.jpg'], ['3-1.jpg', '3-2.jpg'], ['4.jpg'], ['5-1.jpg', '5-2.jpg'], ['6.jpg'], ['7.jpg']],
     when: 2023,
-    where: 'Praha',
+    where: 'Prague',
     who: 'LM architects',
   },
   {
