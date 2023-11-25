@@ -14,7 +14,7 @@ function LinkIcon($: EnhancedJSXElement<'svg'>) {
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="2"
+      strokeWidth="1.5"
       viewBox="0 0 24 24"
     >
       <path d="m 0 0 h 24 v 24 h -24 z" fill="none" stroke="none" />
