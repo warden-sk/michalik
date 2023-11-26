@@ -10,7 +10,8 @@ function Contact() {
   return (
     <div className="Contact" id="contact" pY="8">
       <Container>
-        <div display="grid" gap="4" gridTemplateColumns="3">
+        <div display="grid" gap="8" gridTemplateColumns={['1', { '##': '3' }]}>
+          {/* (1) */}
           <div spaceY="8">
             <div>
               <a display="block" href="#projects">
@@ -29,6 +30,7 @@ function Contact() {
               </a>
             </div>
           </div>
+          {/* (2) */}
           <div spaceY="8">
             <div>
               <Text fontWeight="500" size={4}>
