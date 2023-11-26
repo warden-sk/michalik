@@ -5,7 +5,7 @@
 import React from 'react';
 
 function Container($: EnhancedJSXElement<'div'>) {
-  return <div {...$} /* className="container" mX="auto" */ pX="4" pY="8" />;
+  return <div {...$} /* className="container" mX="auto" */ pX={['4', { '#': '8' }]} pY="8" />;
 }
 
 export default Container;

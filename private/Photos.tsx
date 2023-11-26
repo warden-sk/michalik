@@ -43,7 +43,7 @@ function Test({ i, j, project, set }: P) {
       <div className="Photos">
         <XIcon cursor="pointer" onClick={() => set(moveLeft(-1, -1, project))} />
         <LeftArrowIcon cursor="pointer" onClick={() => set(moveLeft(i, j, project))} />
-        <div alignItems="center" display="flex" height="100" width="100">
+        <div alignItems="center" display="flex" height="100" justifyContent="center" width="100">
           <Photo key={row} url={`./projects/${project.id}/${row}`} />
         </div>
         <RightArrowIcon cursor="pointer" onClick={() => set(moveRight(i, j, project))} />

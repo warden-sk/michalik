@@ -2,6 +2,7 @@
  * Copyright 2023 Marek Kobida
  */
 
+import isUndefined from '@helpers/validation/isUndefined';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Container from './components/Container';
@@ -16,7 +17,7 @@ import Projects from './Projects';
 const ProjectPagePattern = /\/project\/(.+)/;
 
 const labels: [string, string][] = [
-  // ['Services', '#services'],
+  ['Services', '#services'],
   ['Projects', '#projects'],
   ['Contact', '#contact'],
   ['Bēhance', 'https://www.behance.net/mariomichalik'],
@@ -60,7 +61,7 @@ function Router() {
           </div>
           <div display="flex" spaceX="2">
             {labels.map(([label, url]) => {
-              const isBēhance = label === 'Bēhance' ? true : undefined;
+              // const isBēhance = label === 'Bēhance' ? true : undefined;
 
               return (
                 <a
@@ -69,15 +70,9 @@ function Router() {
                   key={label}
                   pX="4"
                   pY="2"
-                  style={
-                    {
-                      // backgroundColor: isBēhance && '#0057ff',
-                      // color: isBēhance && '#fff',
-                    }
-                  }
                   target={/^https/.test(url) ? '_blank' : '_self'}
                 >
-                  <Text icon={isBēhance && 'LinkIcon'}>{label}</Text>
+                  <Text>{label}</Text>
                 </a>
               );
             })}
