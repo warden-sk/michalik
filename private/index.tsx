@@ -5,6 +5,7 @@
 import isUndefined from '@helpers/validation/isUndefined';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '../../applications/common/index.css';
 import Container from './components/Container';
 import Text from './components/Text';
 import Contact from './Contact';
