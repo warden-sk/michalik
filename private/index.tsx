@@ -2,7 +2,6 @@
  * Copyright 2023 Marek Kobida
  */
 
-import isUndefined from '@helpers/validation/isUndefined';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../../applications/common/index.css';
@@ -26,6 +25,35 @@ const labels: [string, string][] = [
 
 function Client() {
   const [url, setUrl] = React.useState<string>('/');
+
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-67QE58237F';
+    document.head.appendChild(script);
+
+    script.addEventListener(
+      'load',
+      () => {
+        window.dataLayer = window.dataLayer || [];
+
+        function $() {
+          dataLayer.push(arguments);
+        }
+
+        $('js', new Date());
+
+        $('config', 'G-67QE58237F', { page_location: location.href });
+
+        window.$ = $;
+      },
+      { once: true },
+    );
+  }, []);
+
+  React.useEffect(() => {
+    window.$?.('event', 'page_view', { page_location: location.href });
+  }, [url]);
 
   return (
     <context.Provider value={{ setUrl, url }}>
