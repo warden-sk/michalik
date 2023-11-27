@@ -23,9 +23,11 @@ function useAnalytics() {
   const { url } = React.useContext(context);
 
   React.useEffect(() => {
+    const id = 'G-67QE58237F';
+
     const script = document.createElement('script');
     script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-67QE58237F';
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
     document.head.appendChild(script);
 
     script.addEventListener(
@@ -40,7 +42,7 @@ function useAnalytics() {
 
         window.google('js', new Date());
 
-        window.google('config', 'G-67QE58237F', { page_location: location.href });
+        window.google('config', id, { page_location: location.href });
       },
       { once: true },
     );
