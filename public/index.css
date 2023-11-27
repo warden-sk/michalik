@@ -39,10 +39,6 @@ body {
   top: 0;
   z-index: 1;
 }
-.Photos .CloseIcon {
-  height: 48px !important;
-  width: 48px !important;
-}
 .Photos .CloseIcon,
 .Photos .LeftIcon,
 .Photos .RightIcon {
