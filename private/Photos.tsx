@@ -44,7 +44,7 @@ function Test({ i, j, project, set }: P) {
         <Close cursor="pointer" onClick={() => set(moveLeft(-1, -1, project))} />
         <Left cursor="pointer" onClick={() => set(moveLeft(i, j, project))} />
         <div alignItems="center" display="flex" height="100" justifyContent="center" width="100">
-          <Photo key={row} url={`./projects/${project.id}/${row}`} />
+          <Photo key={row} url={`https://michalik.studio/projects/${project.id}/${row}`} />
         </div>
         <Right cursor="pointer" onClick={() => set(moveRight(i, j, project))} />
       </div>
@@ -63,7 +63,12 @@ function Photos({ project }: { project: Project }) {
           {project.rows.map((rows, i) => (
             <div display="grid" gap="4" gridTemplateColumns={['1', { '#': rows.length.toString() as '1' }]} key={i}>
               {rows.map((row, j) => (
-                <Photo cursor="pointer" key={row} onClick={() => set([i, j])} url={`./projects/${project.id}/${row}`} />
+                <Photo
+                  cursor="pointer"
+                  key={row}
+                  onClick={() => set([i, j])}
+                  url={`https://michalik.studio/projects/${project.id}/${row}`}
+                />
               ))}
             </div>
           ))}

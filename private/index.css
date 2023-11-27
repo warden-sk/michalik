@@ -38,9 +38,9 @@ body {
 .Photos .LeftIcon,
 .Photos .RightIcon {
   color: hsl(0, 0%, 75%);
-  height: 72px;
+  height: 48px;
   position: absolute;
-  width: 72px;
+  width: 48px;
   z-index: 2;
 }
 .Photos .CloseIcon,
