@@ -17,7 +17,7 @@ function Contact() {
               <a display="block" href="#projects">
                 <Text size={4}>Projects</Text>
               </a>
-              <a display="block" href="#services">
+              <a display="block" href="#services" opacity="50">
                 <Text size={4}>Services</Text>
               </a>
             </div>

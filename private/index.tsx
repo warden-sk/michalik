@@ -68,6 +68,7 @@ function Router() {
                   className="Label"
                   href={url}
                   key={label}
+                  opacity={label === 'Services' && '50'}
                   pX="4"
                   pY="2"
                   target={/^https/.test(url) ? '_blank' : '_self'}
