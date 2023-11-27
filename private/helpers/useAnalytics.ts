@@ -11,7 +11,7 @@ declare global {
   }
 
   interface Window {
-    google: {
+    google?: {
       (type: 'config', id: string, options: GoogleOptions): void;
       (type: 'event', eventType: 'page_view', options: GoogleOptions): void;
       (type: 'js', date: Date): void;
@@ -49,7 +49,7 @@ function useAnalytics() {
   }, []);
 
   React.useEffect(() => {
-    window.google('event', 'page_view', { page_location: location.href });
+    window.google?.('event', 'page_view', { page_location: location.href });
   }, [url]);
 }
 
