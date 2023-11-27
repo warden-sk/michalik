@@ -3,21 +3,19 @@
  */
 
 import React from 'react';
+import LeftArrow from '../../../applications/common/icons/LeftArrow';
 import '../../fontSize.css';
-import icons from '../icons';
 
 type P = EnhancedJSXElement<'div'> & {
-  icon?: keyof typeof icons;
+  icon?: 'LeftArrow';
   size?: number;
 };
 
 function Text({ children, icon, size = 3, ...$ }: P) {
   if (icon) {
-    const Icon = icons[icon];
-
     return (
       <div {...$} alignItems="center" display="flex" spaceX="2" whiteSpace="pre-line">
-        <Icon />
+        <LeftArrow />
         <div className={`f${size}`}>{children}</div>
       </div>
     );

@@ -4,13 +4,13 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Close from '../../applications/common/icons/Close';
+import Left from '../../applications/common/icons/Left';
+import Right from '../../applications/common/icons/Right';
 import Photo from './components/Photo';
 import moveLeft from './helpers/moveLeft';
 import moveRight from './helpers/moveRight';
 import type { Project } from './helpers/types';
-import LeftArrowIcon from './icons/LeftArrowIcon';
-import RightArrowIcon from './icons/RightArrowIcon';
-import XIcon from './icons/XIcon';
 
 type P = {
   i: number;
@@ -41,12 +41,12 @@ function Test({ i, j, project, set }: P) {
   if (row) {
     return (
       <div className="Photos">
-        <XIcon cursor="pointer" onClick={() => set(moveLeft(-1, -1, project))} />
-        <LeftArrowIcon cursor="pointer" onClick={() => set(moveLeft(i, j, project))} />
+        <Close cursor="pointer" onClick={() => set(moveLeft(-1, -1, project))} />
+        <Left cursor="pointer" onClick={() => set(moveLeft(i, j, project))} />
         <div alignItems="center" display="flex" height="100" justifyContent="center" width="100">
           <Photo key={row} url={`./projects/${project.id}/${row}`} />
         </div>
-        <RightArrowIcon cursor="pointer" onClick={() => set(moveRight(i, j, project))} />
+        <Right cursor="pointer" onClick={() => set(moveRight(i, j, project))} />
       </div>
     );
   }
