@@ -48,7 +48,7 @@ function Router() {
               entire process from start to finish.
             </Text>
           </div>
-          <div display="flex" spaceX="2">
+          <div display="flex" overflow="auto" spaceX="2">
             {labels.map(([label, url]) => {
               // const isBēhance = label === 'Bēhance' ? true : undefined;
 
