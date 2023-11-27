@@ -5,6 +5,20 @@
 import React from 'react';
 import context from './context';
 
+declare global {
+  interface GoogleOptions {
+    page_location: string;
+  }
+
+  interface Window {
+    google: {
+      (type: 'config', id: string, options: GoogleOptions): void;
+      (type: 'event', eventType: 'page_view', options: GoogleOptions): void;
+      (type: 'js', date: Date): void;
+    };
+  }
+}
+
 function useAnalytics() {
   const { url } = React.useContext(context);
 
@@ -17,24 +31,23 @@ function useAnalytics() {
     script.addEventListener(
       'load',
       () => {
-        window.dataLayer = window.dataLayer || [];
-
-        function $() {
-          dataLayer.push(arguments);
+        function google() {
+          // @ts-ignore
+          window.dataLayer.push(arguments);
         }
 
-        $('js', new Date());
+        window.google = google;
 
-        $('config', 'G-67QE58237F', { page_location: location.href });
+        window.google('js', new Date());
 
-        window.$ = $;
+        window.google('config', 'G-67QE58237F', { page_location: location.href });
       },
       { once: true },
     );
   }, []);
 
   React.useEffect(() => {
-    window.$?.('event', 'page_view', { page_location: location.href });
+    window.google('event', 'page_view', { page_location: location.href });
   }, [url]);
 }
 
